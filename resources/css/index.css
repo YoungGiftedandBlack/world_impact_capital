@@ -52,17 +52,8 @@
   .wic_logo {
     display: flex;
     flex-direction: row;
-  }
-
-  .wic_logo img {
-    height: auto;
-    width: auto;
-  }
-
-  .wic_logo {
-    display: flex;
     align-items: center;
-    }
+    width: 40%;
   }
 
   .wic_logo span {
@@ -80,6 +71,16 @@
   }
 
 /* wic_logo END */
+
+/* logo START */
+
+  .logo {
+    width: auto;
+    background-image: url("../../resources/images/wic_logo.png");
+    background-size: cover;
+  }
+
+/* logo END */
 
 /* header-container START */
 
