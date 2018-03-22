@@ -1,201 +1,381 @@
-/* html starts here */
+/* html START */
 
   html {
     font-size: 18px;
-    font-family: helvetica;
+    color: #4d5c59;
+    font-family: "libre baskerville" serif;
   }
 
-/* html ends here */
+/* html END */
+
+/* body START */
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff9f1;
+    display: block;
+  }
 
-/* >1025px starts here */
+/* body END */
 
-/* body starts here */
+/* header START */
 
-/* header starts here */
+  header {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
 
-/* wic_logo starts here */
+  .header {
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+    position: fixed;
+    background-color: #fff9f1;
+    z-index: 100;
+  }
 
+/* header END */
 
+/* site-container START */
 
-/* wic_logo ends here */
+  .site-container {
+    position: relative;
+    top: 65px;
+    display: flex;
+    flex-direction: column;
+  }
 
-/* nav starts here */
+/* site-container END */
 
+/* wic_logo START */
 
+  .wic_logo {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .wic_logo img {
+    height: auto;
+    width: auto;
+  }
 
-/* nav ends here */
+  .wic_logo {
+    display: flex;
+    align-items: center;
+    }
+  }
 
-/* header ends here */
+  .wic_logo span {
+    font-size: 25px;
+    color: #4a4a4a;
+    font-family: garamond;
+    padding-left: 5px;
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 850px) and (min-width: 470px) {
+    .wic_logo {
+      width: 100%;
+      justify-content: center;
+    }
+  }
 
-/* about_the_comp starts here */
+  @media only screen and (max-width: 470px) {
+    .wic_logo {
+      display: none;
+    }
+  }
 
-/* about_the_comp_banner starts here */
+/* wic_logo END */
 
+/* header-container START */
 
+  .header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 15px;
+  }
 
-/* about_the_comp_banner ends here */
+/* header-container END */
 
-/* about_the_comp ends here */
+/* wic-logo START */
 
-/* media starts here */
 
-/* media_banner starts here */
 
+/* wic-logo END */
 
+/* nav START */
 
-/* media_banner ends here */
 
-/* media ends here */
 
-/* contacts starts here */
+/* nav END */
 
-/* contacts_banner starts here */
-/* contacts_banner ends here */
+/* nav_items START */
 
-/* contacts ends here */
+  .nav_items {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+  }
 
-/* our_impact starts here */
+  @media only screen and (max-width: 850px) and (min-width: 470px) {
+    .nav_items {
+      display: none;
+      width: 100%;
+    }
+  }
 
+/* nav_items END */
 
+/* desktop START */
 
-/* our_impact ends here */
+  .desktop a {
+    color: #4a4a4a;
+    text-decoration: none;
+  }
 
-/* footer starts here */
+  .desktop li {
+    list-style: none;
+    padding: 1.25px 5px;
+  }
 
+  .desktop ul {
+    margin: 0px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    float: right;
+  }
 
+  @media only screen and (max-width: 850px) {
+    .desktop {
+      display: none;
+    }
+  }
 
-/* footer ends here */
+/* desktop END */
 
+/* mobile START */
 
-/* body ends here */
+  .mobile {
+    width: 100%;
+    text-align: center;
+  }
 
+  .mobile a {
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+  }
 
-/* >1025px ends here */
+  @media only screen and (min-width: 470px) {
+    .mobile {
+      display: none;
+    }
+  }
 
-/*  <1024px and >471px starts here */
+/* mobile END */
 
-/* body starts here */
+/* about_the_comp START */
 
-/* header starts here */
+  #about_the_comp {
+    padding: 0px 10px;
+  }
 
+/* about_the_comp END */
 
+/* media START */
 
-/* header ends here */
+ #media {
+   padding: 0px 10px;
+ }
 
-/* nav starts here */
+/* media END */
 
+/* contacts START */
 
+  #contacts {
+    padding: 0px 10px;
+  }
 
-/* nav ends here */
+/* contacts END */
 
-/* wic_logo starts here */
+/* contact_1_banner START */
 
+  .contact_1_banner {
+    padding: 5px 0px;
+    height: 50%;
+    background-image: url("../../resources/images/african_print_1.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 
+/* contact_1_banner END */
 
-/* wic_logo ends here */
+/* contact_2_banner START */
 
-/* about_the_comp starts here */
+  .contact_2_banner {
+    padding: 5px 0px;
+    height: 50%;
+    background-image: url("../../resources/images/african_print_4.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 
+/* contact_2_banner END */
 
+/* contact_3_banner START */
 
-/* about_the_comp ends here */
+ .contact_3_banner {
+   padding: 5px 0px;
+   height: 50%;
+   background-image: url("../../resources/images/african_print_3.jpg");
+   background-size: cover;
+   background-position: center;
+ }
 
-/* media starts here */
+/* contact_3_banner END */
 
+/* contact_4_banner START */
 
+ .contact_4_banner {
+   padding: 5px 0px;
+   height: 50%;
+   background-image: url("../../resources/images/african_print_2.jpg");
+   background-size: cover;
+   background-position: center;
+ }
 
-/* media ends here */
+/* contact_4_banner END */
 
-/* contacts starts here */
+/* our_impact START */
 
+  #our_impact {
+    padding: 0px 10px;
+  }
 
+/* our_impact END */
 
-/* contacts ends here */
+/* the_sadc START */
 
-/* our_impact starts here */
 
 
+/* the_sadc END */
 
-/* our_impact ends here */
+/* sadc_montage START */
 
-/* footer starts here */
 
 
+/* sadc_montage END */
 
-/* footer ends here */
+/* sdg START */
 
+  .sdg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* body ends here */
+/* sdg END */
 
+/* sdg_text START */
 
-/* <1024px and >471px ends here */
+  .sdg_text {
+    width: 100%;
+  }
 
-/* <470px starts here */
+/* sdg_text END */
 
-/* body starts here */
+/* sdg_icons_container START */
 
-/* header starts here */
+  .sdg_icons_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 5px;
+  }
 
+/* sdg_icons_container END */
 
+/* sdg_icon_container START */
 
-/* header ends here */
+  .sdg_icon_container {
+    width: 15%;
+    display: block;
+    justify-content: space-between;
+  }
 
-/* nav starts here */
+  .sdg_icon_container img {
+    width: 100%;
+    padding: 0;
+  }
 
+/* sdg_icon_container END */
 
+/* footer START */
 
-/* nav ends here */
+  .footer {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+  }
 
-/* wic_logo starts here */
+  footer {
+   display: flex;
+   flex-direction: row;
+   width: 95%;
+   justify-content: space-between;
+ }
 
+/* footer END */
 
+/* footer-text START */
 
-/* wic_logo ends here */
+  }
+  .footer-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-/* about_the_comp starts here */
+  .footer-text span {
+    font-size: 18px;
+    color: #4a4a4a;
+    font-family: garamond;
+  }
 
 
+  @media only screen and (max-width: 470px) {
+    .footer-text {
+      display: none;
+    }
 
-/* about_the_comp ends here */
+/* footer-text END */
 
-/* media starts here */
+/**/
 
+  .footer-logo span {
+    padding-left: 10px;
+    font-size: 18px;
+    color: #4a4a4a;
+    font-family: garamond;
+  }
 
+/* footer-logo END */
 
-/* media ends here */
+/* copyright START */
 
-/* contacts starts here */
 
 
-
-/* contacts ends here */
-
-/* our_impact starts here */
-
-
-
-/* our_impact ends here */
-
-/* footer starts here */
-
-
-
-/* footer ends here */
-
-
-/* body ends here */
-
-/* <470px ends here */
-
-/*  starts here */
-/*  ends here */
-/*  starts here */
-/*  ends here */
-/*  starts here */
-/*  ends here */
-/*  starts here */
-/*  ends here */
-/*  starts here */
-/*  ends here */
-/*  starts here */
-/*  ends here */
+/* copyright END */
