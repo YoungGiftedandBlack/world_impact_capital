@@ -73,14 +73,7 @@
     font-weight: bold;
   }
 
-  @media only screen and (max-width: 850px) and (min-width: 470px) {
-    .wic_logo {
-      width: 100%;
-      justify-content: center;
-    }
-  }
-
-  @media only screen and (max-width: 470px) {
+  @media only screen and (max-width: 850px) {
     .wic_logo {
       display: none;
     }
@@ -119,18 +112,12 @@
     width: 70%;
   }
 
-  @media only screen and (max-width: 850px) and (min-width: 470px) {
+  @media only screen and (max-width: 850px) {
     .nav_items {
-      display: none;
       width: 100%;
     }
   }
 
-  @media only screen and (max-width: 470px) {
-    .nav_items {
-      width: 100%;
-    }
-  }
 /* nav_items END */
 
 /* desktop START */
@@ -142,7 +129,7 @@
 
   .desktop li {
     list-style: none;
-    padding: 1.25px 5px;
+    padding: 1.25px 10px;
   }
 
   .desktop ul {
@@ -174,7 +161,7 @@
     text-decoration: none;
   }
 
-  @media only screen and (min-width: 470px) {
+  @media only screen and (min-width: 850px) {
     .mobile {
       display: none;
     }
@@ -517,6 +504,12 @@
    top: 100px;
  }
 
+ @media only screen and (max-width: 850px) {
+  footer {
+    justify-content: center;
+  }
+ }
+
 /* footer END */
 
 /* footer-text START */
@@ -535,20 +528,26 @@
   }
 
 
-  @media only screen and (max-width: 470px) {
+  @media only screen and (max-width: 850px) {
     .footer-text {
       display: none;
     }
 
 /* footer-text END */
 
-/**/
+/* footer-logo START */
 
   .footer-logo span {
     padding-left: 10px;
     font-size: 18px;
     color: #4a4a4a;
     font-family: garamond;
+  }
+
+  @media only screen and (max-width: 850px) {
+    .footer-logo span {
+      text-align: center;
+    }
   }
 
 /* footer-logo END */
