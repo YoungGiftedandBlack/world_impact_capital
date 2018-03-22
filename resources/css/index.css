@@ -14,7 +14,6 @@
     margin: 0;
     padding: 0;
     background-color: #fff9f1;
-    display: block;
   }
 
 /* body END */
@@ -23,23 +22,16 @@
 
   header {
     width: 100%;
-    height: 100%;
+    height: 65px;
     justify-content: center;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-  }
-
-  .header {
-    width: 100%;
-    justify-content: center;
-    margin: 0;
-    padding: 10px 0px;
     border-bottom: 1px solid black;
     position: fixed;
     background-color: #fff9f1;
-    z-index: 100;
+    z-index: 10;
   }
 
 /* header END */
@@ -47,10 +39,10 @@
 /* site-container START */
 
   .site-container {
-    position: relative;
-    top: 35px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    top: 65px;
   }
 
 /* site-container END */
@@ -194,9 +186,18 @@
 
   #about_the_comp {
     padding: 0px 10px;
+    line-height: 0;
   }
 
 /* about_the_comp END */
+
+/* about_the_comp_text START */
+
+  .about_the_comp_text h1 {
+    text-align: center;
+  }
+
+/* about_the_comp_text END */
 
 /* media START */
 
@@ -206,61 +207,217 @@
 
 /* media END */
 
+/* media_text START */
+
+  .media_text h1 {
+    text-align: center;
+  }
+
+/* media_text END */
+
 /* contacts START */
 
   #contacts {
     padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    align-self: center;
   }
 
 /* contacts END */
 
+/* contacts_title START */
+
+  .contacts_title h1 {
+    text-align: center;
+  }
+
+/* contacts_title END */
+
+/* contact_1 START */
+
+  .contact_1 {
+    height: 100px;
+    /*background-image: url("../../resources/images/african_print_1.jpg");*/
+    background-size: cover;
+    background-position: center;
+    }
+
+/* contact_1 END */
+
 /* contact_1_banner START */
 
   .contact_1_banner {
-    padding: 5px 0px;
-    height: 50%;
-    background-image: url("../../resources/images/african_print_1.jpg");
-    background-size: cover;
-    background-position: center;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
   }
 
 /* contact_1_banner END */
 
+/* contact_1_mugshot START */
+
+  .contact_1_mugshot {
+    background-color: #fff;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact_1_mugshot img {
+    width: auto;
+    height: 75%;
+    padding: 5%;
+  }
+
+/* contact_1_mugshot END */
+
+/* contact_1_bio START */
+
+  .contact_1_bio {
+    padding: 0 5%;
+  }
+
+/* contact_1_bio END */
+
+/* contact_2 START */
+
+  .contact_2 {
+    height: 100px;
+    /*background-image: url("../../resources/images/african_print_4.jpg");*/
+    background-size: cover;
+    background-position: center;
+    }
+
+/* contact_2 END */
+
 /* contact_2_banner START */
 
   .contact_2_banner {
-    padding: 5px 0px;
-    height: 50%;
-    background-image: url("../../resources/images/african_print_4.jpg");
-    background-size: cover;
-    background-position: center;
-  }
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    }
 
 /* contact_2_banner END */
+
+/* contact_2_mugshot START */
+
+  .contact_2_mugshot {
+    background-color: #fff;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact_2_mugshot img {
+    width: auto;
+    height: 75%;
+    padding: 5%;
+  }
+
+/* contact_2_mugshot END */
+
+/* contact_2_bio START */
+
+  .contact_2_bio {
+    padding: 0 5%;
+  }
+
+/* contact_2_bio END */
+
+/* contact_3 START */
+
+  .contact_3 {
+    height: 100px;
+    /*background-image: url("../../resources/images/african_print_3.jpg");*/
+    background-size: cover;
+    background-position: center;
+    }
+
+/* contact_3 END */
 
 /* contact_3_banner START */
 
  .contact_3_banner {
-   padding: 5px 0px;
-   height: 50%;
-   background-image: url("../../resources/images/african_print_3.jpg");
-   background-size: cover;
-   background-position: center;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
  }
 
 /* contact_3_banner END */
 
+/* contact_3_mugshot START */
+
+  .contact_3_mugshot {
+    background-color: #fff;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact_3_mugshot img {
+    width: auto;
+    height: 75%;
+    padding: 5%;
+  }
+
+/* contact_3_mugshot END */
+
+/* contact_3_bio START */
+
+  .contact_3_bio {
+    padding: 0 5%;
+  }
+
+/* contact_3_bio END */
+
+/* row START */
+
+  .contact_4 {
+    height: 100px;
+    /*background-image: url("../../resources/images/african_print_2.jpg");*/
+    background-size: cover;
+    background-position: center;
+  }
+
+/* contact_4 END */
+
 /* contact_4_banner START */
 
  .contact_4_banner {
-   padding: 5px 0px;
-   height: 50%;
-   background-image: url("../../resources/images/african_print_2.jpg");
-   background-size: cover;
-   background-position: center;
+   height: 100%;
+   display: flex;
+   flex-direction: row;
  }
 
 /* contact_4_banner END */
+
+/* contact_4_mugshot START */
+
+  .contact_4_mugshot {
+    background-color: #fff;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact_4_mugshot img {
+    padding-top: 5%;
+    width: 75%;
+    height: 75%;
+  }
+
+/* contact_4_mugshot END */
+
+/* contact_4_bio START */
+
+  .contact_4_bio {
+    padding: 0 5%;
+  }
+
+/* contact_4_bio END */
 
 /* our_impact START */
 
@@ -270,11 +427,27 @@
 
 /* our_impact END */
 
+/* our_impact_text START */
+
+  .our_impact_text h1 {
+    text-align: center;
+  }
+
+/* our_impact_text END */
+
 /* the_sadc START */
 
 
 
 /* the_sadc END */
+
+/* sadc_text START */
+
+  .sadc_text h2 {
+    text-align: center;
+  }
+
+/* sadc_text END */
 
 /* sadc_montage START */
 
@@ -296,6 +469,10 @@
 
   .sdg_text {
     width: 100%;
+  }
+
+  .sdg_text h2 {
+    text-align: center;
   }
 
 /* sdg_text END */
@@ -329,18 +506,15 @@
 
 /* footer START */
 
-  .footer {
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    align-items: center;
-  }
-
   footer {
    display: flex;
    flex-direction: row;
-   width: 95%;
+   padding: 0px 10px;
+   height: 50px;
    justify-content: space-between;
+   align-items: center;
+   position: relative;
+   top: 100px;
  }
 
 /* footer END */
