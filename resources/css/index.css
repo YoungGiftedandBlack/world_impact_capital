@@ -48,7 +48,7 @@
 
   .site-container {
     position: relative;
-    top: 65px;
+    top: 35px;
     display: flex;
     flex-direction: column;
   }
@@ -134,6 +134,11 @@
     }
   }
 
+  @media only screen and (max-width: 470px) {
+    .nav_items {
+      width: 100%;
+    }
+  }
 /* nav_items END */
 
 /* desktop START */
