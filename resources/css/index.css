@@ -6,6 +6,12 @@
     font-family: "libre baskerville" serif;
   }
 
+  html h3 {
+    color: #be9e55;
+    font-family: times serif;
+  }
+
+
 /* html END */
 
 /* body START */
@@ -217,16 +223,45 @@
 
 /* contacts_title START */
 
+  .contacts_title {
+    padding-bottom: 10px;
+  }
+
   .contacts_title h1 {
     text-align: center;
   }
 
 /* contacts_title END */
 
+/* contacts_row_1 START */
+
+  .contacts_row_1 {
+    width: 100%;
+    padding: 5px 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+/* contacts_row_1 END */
+
+/* contacts_row_2 START */
+
+  .contacts_row_2 {
+    width: 100%;
+    padding: 5px 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+/* contacts_row_2 END */
+
 /* contact_1 START */
 
   .contact_1 {
     height: 100px;
+    width: 48%;
     /*background-image: url("../../resources/images/african_print_1.jpg");*/
     background-size: cover;
     background-position: center;
@@ -251,6 +286,7 @@
     width: 80px;
     display: flex;
     justify-content: center;
+    margin-right: 5px;
   }
 
   .contact_1_mugshot img {
@@ -264,7 +300,8 @@
 /* contact_1_bio START */
 
   .contact_1_bio {
-    padding: 0 5%;
+    padding: 0;
+    width: 100%;
   }
 
 /* contact_1_bio END */
@@ -273,6 +310,7 @@
 
   .contact_2 {
     height: 100px;
+    width: 48%;
     /*background-image: url("../../resources/images/african_print_4.jpg");*/
     background-size: cover;
     background-position: center;
@@ -297,6 +335,7 @@
     width: 80px;
     display: flex;
     justify-content: center;
+    margin-right: 5px;
   }
 
   .contact_2_mugshot img {
@@ -310,7 +349,8 @@
 /* contact_2_bio START */
 
   .contact_2_bio {
-    padding: 0 5%;
+    padding: 0;
+    width: 100%;
   }
 
 /* contact_2_bio END */
@@ -319,6 +359,7 @@
 
   .contact_3 {
     height: 100px;
+    width: 48%;
     /*background-image: url("../../resources/images/african_print_3.jpg");*/
     background-size: cover;
     background-position: center;
@@ -343,6 +384,7 @@
     width: 80px;
     display: flex;
     justify-content: center;
+    margin-right: 5px;
   }
 
   .contact_3_mugshot img {
@@ -356,7 +398,8 @@
 /* contact_3_bio START */
 
   .contact_3_bio {
-    padding: 0 5%;
+    padding: 0;
+    width: 100%;
   }
 
 /* contact_3_bio END */
@@ -365,6 +408,7 @@
 
   .contact_4 {
     height: 100px;
+    width: 48%;
     /*background-image: url("../../resources/images/african_print_2.jpg");*/
     background-size: cover;
     background-position: center;
@@ -387,14 +431,16 @@
   .contact_4_mugshot {
     background-color: #fff;
     width: 80px;
+    height: auto;
     display: flex;
     justify-content: center;
+    margin-right: 5px;
   }
 
   .contact_4_mugshot img {
-    padding-top: 5%;
-    width: 75%;
-    height: 75%;
+    padding: 5%;
+    width: 90%;
+    height: auto;
   }
 
 /* contact_4_mugshot END */
@@ -402,7 +448,8 @@
 /* contact_4_bio START */
 
   .contact_4_bio {
-    padding: 0 5%;
+    padding: 0;
+    width: 100%;
   }
 
 /* contact_4_bio END */
@@ -469,13 +516,40 @@
 
   .sdg_icons_container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    max-width: 100%;
+    max-width: 80%;
     padding: 5px;
   }
 
+  .sdg_icons_container img {
+    width: 100%;
+    padding: 0;
+  }
+
 /* sdg_icons_container END */
+
+/* row_1 START */
+
+  .row_1 {
+    display: flex;
+    padding: 5px 0px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+/* row_1 END */
+
+/* row_2 START */
+
+  .row_2 {
+    display: flex;
+    padding: 5px 0px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+/* row_2 END */
 
 /* sdg_icon_container START */
 
@@ -485,12 +559,104 @@
     justify-content: space-between;
   }
 
-  .sdg_icon_container img {
-    width: 100%;
-    padding: 0;
+/* sdg_icon_container END */
+
+/* sdg_1 START */
+
+  #sdg_1 {
+    opacity: 0.25;
   }
 
-/* sdg_icon_container END */
+/* sdg_1 END */
+
+/* sdg_2 START */
+
+  #sdg_2 {
+    opacity: 0.25;
+  }
+
+/* sdg_2 END */
+
+/* sdg_3 START */
+
+  #sdg_3 {
+    opacity: 0.25;
+  }
+
+/* sdg_3 END */
+
+/* sdg_4 START */
+
+  #sdg_4 {
+    opacity: 0.25;
+  }
+
+/* sdg_4 END */
+
+/* sdg_5 START */
+
+  #sdg_5 {
+    opacity: 1;
+  }
+
+/* sdg_5 END */
+
+/* sdg_6 START */
+
+  #sdg_6 {
+    opacity: 0.25;
+  }
+
+/* sdg_6 END */
+
+/* sdg_7 START */
+
+  #sdg_7 {
+    opacity: 0.25;
+  }
+
+/* sdg_7 END */
+
+/* sdg_8 START */
+
+  #sdg_8 {
+    opacity: 1;
+  }
+
+/* sdg_8 END */
+
+/* sdg_9 START */
+
+  #sdg_9 {
+    opacity: 0.25;
+  }
+
+/* sdg_9 END */
+
+/* sdg_11 START */
+
+  #sdg_11 {
+    opacity: 0.25;
+  }
+
+/* sdg_11 END */
+
+/* sdg_12 START */
+
+  #sdg_12 {
+    opacity: 0.25;
+  }
+
+/* sdg_12 END */
+
+/* sdg_13 START */
+
+  #sdg_13 {
+    opacity: 0.25;
+  }
+
+/* sdg_13 END */
+
 
 /* footer START */
 
@@ -524,7 +690,7 @@
 
   .footer-text span {
     font-size: 18px;
-    color: #4a4a4a;
+    color: #be9e55;
     font-family: garamond;
   }
 
