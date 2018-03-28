@@ -7,7 +7,9 @@ Also could include transitions to the contacts section so that they grow when ac
 Could add a transition animation to the nav bar so that it detaches from the top when you navigate down the page. Could look slick AF. Also could add
 Font Awesome icons to the contacts section, to make it look more professional...like LinkedIn and email icons.
 Should use Bootstraps, include scripts at the bottom to prevent it being top-heavy and not loading quickly.
-Could make the header intially see-through and then change at 100px from the top.
+Could make the header intially see-through and then change at 100px from the top. Maybe try setting the background of a whole section to be a picture
+and then make the title div have a transparent background so that as you scroll it moves? Also would have to set the title font color to white?
+Could maybe remove the bios and have a layout similar to Cpria VC?
 Comments ends here -->
 <!-- head starts here -->
   <head>
@@ -63,12 +65,15 @@ Comments ends here -->
       <div id="about_the_comp">
 <!-- about_the_comp_banner starts here -->
         <div class="about_the_comp_banner">
+          <div class="title">
+            <h1>About World Impact Capital</h1>
+
+          </div>
 
         </div>
 <!-- about_the_comp_banner ends here -->
 <!-- about_the_comp_text starts here -->
         <div class="about_the_comp_text">
-          <h1>About World Impact Capital</h1>
           <span>World Impact Capital (WIC) was inspired by the Shona notion of a “Dura” meaning a “hut” traditionally used to store family assets such as the annual food harvest. A Dura is customarily owned by the woman of the household, who uses these assets as a security “safety net” for her family over the course of the year.
 
 When launched, WIC Fund I will be an Impact Investment fund offering an exciting investment opportunity in Southern African markets for sophisticated investors wishing to participate in some of the premier frontier market growth stories of the 21st Century, earn market-rate financial returns and simultaneously create transformational social impact.
@@ -83,12 +88,15 @@ In addition to earning competitive returns, investments will be designed to gene
       <div id="our_impact">
 <!-- our_impact_banner starts here -->
         <div class="our_impact_banner">
+          <div class="title">
+            <h1>Our Impact</h1>
+
+          </div>
 
         </div>
 <!-- our_impact_banner ends here -->
 <!-- our_impact_text starts here -->
         <div class="our_impact_text">
-          <h1>Our Impact</h1>
           <span></span>
         </div>
 <!-- our_impact_text starts here -->
@@ -219,12 +227,15 @@ In addition to earning competitive returns, investments will be designed to gene
       <div id="media">
 <!-- media_banner starts here -->
         <div class="media_banner">
+          <div class="title">
+            <h1>Media</h1>
+
+          </div>
 
         </div>
 <!-- media_banner ends here -->
 <!-- media_text starts here -->
         <div class="media_text">
-          <h1>Media</h1>
           <span></span>
         </div>
 <!-- media_text ends here -->
@@ -233,11 +244,11 @@ In addition to earning competitive returns, investments will be designed to gene
 
 <!-- the_news starts here -->
       <div class="the_news">
-        <div class="new_title">
-          <h1>News and Events</h1>
-        </div>
 <!-- the_news_banner starts here -->
         <div class="news_banner">
+          <div class="title">
+            <h1>News and Events</h1>
+          </div>
 
         </div>
 <!-- the_news_banner ends here -->
@@ -253,14 +264,14 @@ In addition to earning competitive returns, investments will be designed to gene
       <div id="contacts">
 <!-- contacts_banner starts here -->
         <div class="contacts_banner">
+          <div class="title">
+            <h1>Contacts</h1>
+          </div>
 
         </div>
 <!-- contacts_banner ends here -->
-<!-- contacts_title starts here -->
-        <div class="contacts_title">
-          <h1>Contacts</h1>
-        </div>
-<!-- contacts_title ends here -->
+<!-- title starts here -->
+<!-- title ends here -->
 <!-- contacts_desktop starts here -->
           <div class="contacts_desktop">
 <!-- contacts_row_1 starts here -->
@@ -274,6 +285,7 @@ In addition to earning competitive returns, investments will be designed to gene
 <!-- contact_1_social_media starts here -->
                     <div class="contact_1_social_media">
                       <a href="#"><i class="fa fa-envelope fa-2x"></i></a><a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                      <span><a href="#">More info...</a></span>
                     </div>
 <!-- contact_1_social_media ends here -->
                   </div>
@@ -281,10 +293,7 @@ In addition to earning competitive returns, investments will be designed to gene
       <!-- contact_1_bio starts here -->
                   <div class="contact_1_bio">
                     <h3>Nyasha Gwatidzo</h3>
-                    <span>Nyasha Gwatidzo is a distinguished business-woman and philanthropist who has had a 25-year career launching and building successful multi-million pound businesses and social enterprises in the United Kingdom, generating a cumulative $130 million turnover and over $25 million EBIT since 1987.  Her pioneering fostering social enterprise Banya Family Placement Agency has placed 4,000 children with UK foster parents since 1987. Nyasha’s achievements have won widespread recognition winning nu-merous prestigious business awards, including European Federation Black Women Business Leader (2000) and others.
 
-          With a strong interest in ethical investment, solid business acumen and extensive knowledge of South-ern African countries, Nyasha is a formidable business force specializing in social impact start-ups and helping them achieve rapid, profitable and sustainable growth. Nyasha’s academic background in-cludes studies at Imperial College London in Chemistry, a Postgraduate Degree in Business Manage-ment from Cranfield Business School and a Master’s Degree in Therapeutic Childcare from Reading University.  She is also a qualified Social Worker and Counselling Therapist.
-                    </span>
                   </div>
       <!-- contact_1_bio ends here -->
                 </div>
@@ -301,6 +310,7 @@ In addition to earning competitive returns, investments will be designed to gene
         <!-- contact_2_social_media starts here -->
                     <div class="contact_2_social_media">
                       <a href="#"><i class="fa fa-envelope fa-2x"></i></a><a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                      <span><a href="#">More info...</a></span>
                     </div>
         <!-- contact_2_social_media ends here -->
                   </div>
@@ -308,12 +318,7 @@ In addition to earning competitive returns, investments will be designed to gene
       <!-- contact_2_bio starts here -->
                   <div class="contact_2_bio">
                     <h3>Matthew Powell</h3>
-                    <span>Matthew brings more than 25 years global business leadership experience delivering revenue & profitability growth in over 40 countries across Europe, Middle East, Africa and Asia Pacific.   Currently a Strategy Advisory & Business Consultant, Matthew previously served for 10 years as General Counsel, Europe, Middle, East Africa (EMEA) for a $ 42 billion revenue, 150,000 employee US multi-national.
 
-                    As an Executive Management Team member for a 12,000 employee $2 billion EMEA business, Matthew negotiated over $4 billion of service contracts and joint ventures. As CEO, Deputy CEO, Board Chairman, Board Director and General Manager led systems integration & facilities services businesses achieving many millions of dollars of revenue and increasing EBIT across Europe and the Middle East.
-
-                    Matthew holds a PhD in Strategy & Program Management, a Juris Doctor (JD), an MBA in Global Management and an MA (Oxford) and BA (Hons) in Philosophy, Politics and Economics.
-                    </span>
                   </div>
       <!-- contact_2_bio ends here -->
                 </div>
@@ -334,6 +339,7 @@ In addition to earning competitive returns, investments will be designed to gene
         <!-- contact_3_social_media starts here -->
                     <div class="contact_3_social_media">
                       <a href="#"><i class="fa fa-envelope fa-2x"></i></a><a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                      <span><a href="#">More info...</a></span>
                     </div>
         <!-- contact_3_social_media ends here -->
                   </div>
@@ -341,7 +347,6 @@ In addition to earning competitive returns, investments will be designed to gene
       <!-- contact_3_bio starts here -->
                   <div class="contact_3_bio">
                     <h3>Other</h3>
-                    <span>How great am I?</span>
                   </div>
       <!-- contact_3_bio starts here -->
                 </div>
@@ -358,6 +363,7 @@ In addition to earning competitive returns, investments will be designed to gene
         <!-- contact_4_social_media starts here -->
                     <div class="contact_4_social_media">
                       <a href="#"><i class="fa fa-envelope fa-2x"></i></a><a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                      <span><a href="#">More info...</a></span>
                     </div>
         <!-- contact_4_social_media ends here -->
                   </div>
@@ -365,7 +371,6 @@ In addition to earning competitive returns, investments will be designed to gene
       <!-- contact_4_bio starts here -->
                   <div class="contact_4_bio">
                     <h3>AIODA</h3>
-                    <span>How great am I?</span>
                   </div>
       <!-- contact_4_bio ends here -->
                 </div>

@@ -147,6 +147,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0px 15px;
+    height: 100%;
   }
 
 /* header-container END */
@@ -168,7 +169,7 @@
   .nav_items {
     margin: 0;
     padding: 0;
-    width: 70%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -183,6 +184,11 @@
 /* nav_items END */
 
 /* desktop START */
+
+  .desktop, .desktop ul {
+    height: 100%;
+    align-items: center;
+  }
 
   .desktop a {
     color: #4a4a4a;
@@ -204,6 +210,10 @@
     display: flex;
     flex-direction: row;
     float: right;
+  }
+
+  .desktop li:hover {
+    border-bottom: 1.5px solid black;
   }
 
   @media only screen and (max-width: 850px) {
@@ -253,6 +263,8 @@
     width: 100%;
     background-image: url("../../resources/images/kilimanjaro.jpg");
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 
   @media only screen and (max-width: 1000px) {
@@ -274,6 +286,23 @@
   }
 
 /* about_the_comp_banner END */
+
+/* title START */
+
+  .title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title h1 {
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    text-align: center;
+  }
+
+/* title END */
 
 /* about_the_comp_text START */
 
@@ -310,6 +339,8 @@
     width: 100%;
     background-image: url("../../resources/images/serengeti_national_park.jpg");
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 
   @media only screen and (max-width: 1000px) {
@@ -360,6 +391,8 @@
   background-image: url("../../resources/images/kirstenbosch_botanical_gardens.jpg");
   background-size: cover;
   background-position: left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -403,8 +436,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    padding: 0px 8px;
+    width: 50%;
+    padding: 0px;
   }
 
   .contact_1, .contact_2, .contact_3, .contact_4 {
@@ -427,7 +460,7 @@
   }
 
   .contact_1_mugshot, .contact_2_mugshot, .contact_3_mugshot, .contact_4_mugshot {
-    width: 45%;
+    width: 100%;
     display: flex;
     justify-content: center;
     height: 200px;
@@ -438,14 +471,24 @@
     top: 25%;
     height: 50px;
     padding: 12px;
-    opacity: 0;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .contact_1_social_media a, .contact_2_social_media a, .contact_3_social_media a, .contact_4_social_media a {
+    text-decoration: none;
+  }
+
+  .contact_1_social_media a:hover, .contact_2_social_media a:hover, .contact_3_social_media a:hover, .contact_4_social_media a:hover {
+    color: rgb(30, 0, 181);
   }
 
   .contact_1_mugshot, .contact_2_mugshot, .contact_3_mugshot, .contact_4_mugshot {
     background-image: url("../../resources/images/profile_pic.png");
     background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
   }
 
@@ -456,11 +499,11 @@
   }
 
   .contact_1_mugshot:hover .contact_1_social_media, .contact_2_mugshot:hover .contact_2_social_media, .contact_3_mugshot:hover .contact_3_social_media, .contact_4_mugshot:hover .contact_4_social_media {
-    opacity: 1;
+    visibility: visible;
   }
 
   .contact_1_mugshot:hover, .contact_2_mugshot:hover, .contact_3_mugshot:hover, .contact_4_mugshot:hover {
-    opacity: 0.75;
+    opacity: 0.5;
   }
 
   #contacts i {
@@ -516,6 +559,8 @@
   background-image: url("../../resources/images/addo_elephant_national_park.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -537,6 +582,15 @@
 }
 
 /* contacts_banner END */
+
+/* contacts_desktop START */
+
+  .contacts_desktop {
+    display: flex;
+    flex-direction: row;
+  }
+
+/* contacts_desktop END */
 
 /* fa-envelope START */
 
@@ -593,12 +647,6 @@
 
 /* contact_1 END */
 
-/* contact_1_banner START */
-
-
-
-/* contact_1_banner END */
-
 /* contact_1_mugshot START */
 
 
@@ -623,12 +671,6 @@
 
 /* contact_2 END */
 
-/* contact_2_banner START */
-
-
-
-/* contact_2_banner END */
-
 /* contact_2_mugshot START */
 
 
@@ -647,12 +689,6 @@
 
 /* contact_3 END */
 
-/* contact_3_banner START */
-
-
-
-/* contact_3_banner END */
-
 /* contact_3_mugshot START */
 
 
@@ -670,12 +706,6 @@
 
 
 /* contact_4 END */
-
-/* contact_4_banner START */
-
-
-
-/* contact_4_banner END */
 
 /* contact_4_mugshot START */
 
@@ -705,6 +735,8 @@
     background-image: url("../../resources/images/zambezi_river.jpg");
     background-size: cover;
     background-position: bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
   }
 
   @media only screen and (max-width: 1000px) {
