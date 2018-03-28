@@ -6,6 +6,8 @@ Could include different fonts using Google Fonts
 Also could include transitions to the contacts section so that they grow when active???
 Could add a transition animation to the nav bar so that it detaches from the top when you navigate down the page. Could look slick AF. Also could add
 Font Awesome icons to the contacts section, to make it look more professional...like LinkedIn and email icons.
+Should use Bootstraps, include scripts at the bottom to prevent it being top-heavy and not loading quickly.
+Could make the header intially see-through and then change at 100px from the top.
 Comments ends here -->
 <!-- head starts here -->
   <head>
@@ -14,6 +16,7 @@ Comments ends here -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="./resources/css/index.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="icon" href="./resources/images/favicon.ico" type="image-/x-icon">
   </head>
 <!-- head ends here -->
 <!-- body starts here -->
@@ -24,9 +27,11 @@ Comments ends here -->
       <div class="header-container">
 <!-- wic_logo starts here -->
         <div class="wic_logo">
+<!-- logo starts here -->
           <div class="logo">
-
+            <img src="./resources/images/wic_logo.png" alt="company logo">
           </div>
+<!-- logo ends here -->
           <span>World Impact Capital</span>
         </div>
 <!-- wic_logo ends here -->
@@ -42,7 +47,7 @@ Comments ends here -->
             </ul>
           </nav>
           <nav class="mobile">
-            <span><a href="header">WIC</a></span>
+            <span><a href="#">World Impact Capital</a></span>
           </nav>
 <!-- nav ends here -->
         </div>
@@ -56,10 +61,19 @@ Comments ends here -->
     <div class="site-container">
 <!-- about_the_comp starts here -->
       <div id="about_the_comp">
+<!-- about_the_comp_banner starts here -->
+        <div class="about_the_comp_banner">
+
+        </div>
+<!-- about_the_comp_banner ends here -->
 <!-- about_the_comp_text starts here -->
         <div class="about_the_comp_text">
-          <h1>About the Company</h1>
-          <span></span>
+          <h1>About World Impact Capital</h1>
+          <span>World Impact Capital (WIC) was inspired by the Shona notion of a “Dura” meaning a “hut” traditionally used to store family assets such as the annual food harvest. A Dura is customarily owned by the woman of the household, who uses these assets as a security “safety net” for her family over the course of the year.
+
+When launched, WIC Fund I will be an Impact Investment fund offering an exciting investment opportunity in Southern African markets for sophisticated investors wishing to participate in some of the premier frontier market growth stories of the 21st Century, earn market-rate financial returns and simultaneously create transformational social impact.
+
+In addition to earning competitive returns, investments will be designed to generate employment and "decent" job creation, help raise living standards and improve financial security for local communities, just as a Dura is intended to do for local families. We believe market-rate financial returns and positive impact creation need not be mutually exclusive, but rather can be complementary and mutually reinforcing</span>
         </div>
 <!-- about_the_comp_text starts here -->
       </div>
@@ -67,6 +81,11 @@ Comments ends here -->
 
 <!-- our_impact starts here -->
       <div id="our_impact">
+<!-- our_impact_banner starts here -->
+        <div class="our_impact_banner">
+
+        </div>
+<!-- our_impact_banner ends here -->
 <!-- our_impact_text starts here -->
         <div class="our_impact_text">
           <h1>Our Impact</h1>
@@ -83,70 +102,97 @@ Comments ends here -->
 <!-- sdg_text ends here -->
 <!-- sdg_icons starts here -->
           <div class="sdg_icons_container">
+<!-- row_container_1 starts here -->
+            <div class="row_container_1">
 <!-- row_1 starts here -->
-            <div class="row_1">
-<!-- sdg_icon_container starts here -->
-              <div class="sdg_icon_container">
-                <img id="sdg_3" src="./resources/images/sdg_3.png" alt="Good health and Wellbeing">
+              <div class="row_1">
+<!-- sdg_icon_container_3 starts here -->
+                <div class="sdg_icon_container_3">
+                  <img id="sdg_3" src="./resources/images/sdg_3.png" alt="Good health and Wellbeing">
+                  <span></span>
+                </div>
+<!-- sdg_icon_container_3 ends here -->
+<!-- sdg_icon_container_5 starts here -->
+                <div class="sdg_icon_container_5">
+                  <div class="description_5">
+                    <span>Achieve gender equality and empower all women and girls</span>
+                  </div>
+                </div>
+<!-- sdg_icon_container_5 ends here -->
+<!-- sdg_icon_container_6 starts here -->
+                <div class="sdg_icon_container_6">
+                  <img id="sdg_6" src="./resources/images/sdg_6.png" alt="Clean Water and Sanitation">
+                  <span></span>
+                </div>
+<!-- sdg_icon_container_6 ends here -->
               </div>
-<!-- sdg_icon_container ends here -->
-              <div class="sdg_icon_container">
-                <img id="sdg_5" src="./resources/images/sdg_5.png" alt="Gender Equality">
-              </div>
-<!-- sdg_icon_container starts here -->
-              <div class="sdg_icon_container">
-                <img id="sdg_6" src="./resources/images/sdg_6.png" alt="Clean Water and Sanitation">
-              </div>
-<!-- sdg_icon_container ends here -->
-<!-- sdg_icon_container starts here -->
-              <div class="sdg_icon_container">
-                <img id="sdg_7" src="./resources/images/sdg_7.png" alt="Affordable and Clean Energy">
-              </div>
-<!-- sdg_icon_container ends here -->
-<!-- sdg_icon_container starts here -->
-              <div class="sdg_icon_container">
-                <img id="sdg_9" src="./resources/images/sdg_9.png" alt="Decent and Economic Growth">
-              </div>
-<!-- sdg_icon_container ends here -->
-<!-- sdg_icon_container starts here -->
-              <div class="sdg_icon_container">
-                <img id="sdg_13" src="./resources/images/sdg_13.png" alt="Climate Action">
-              </div>
-<!-- sdg_icon_container ends here -->
-            </div>
 <!-- row_1 ends here -->
 <!-- row_2 starts here -->
-            <div class="row_2">
-<!-- sdg_icon_container starts here -->
-              <div class="sdg_icon_container">
-                <img id="sdg_8" src="./resources/images/sdg_8.png" alt="Good health and Wellbeing">
+              <div class="row_2">
+<!-- sdg_icon_container_7 starts here -->
+                <div class="sdg_icon_container_7">
+                  <img id="sdg_7" src="./resources/images/sdg_7.png" alt="Affordable and Clean Energy">
+                  <span></span>
+                </div>
+<!-- sdg_icon_container_7 ends here -->
+<!-- sdg_icon_container_9 starts here -->
+                <div class="sdg_icon_container_9">
+                  <img id="sdg_9" src="./resources/images/sdg_9.png" alt="Decent and Economic Growth">
+                </div>
+<!-- sdg_icon_container_9 ends here -->
+<!-- sdg_icon_container_13 starts here -->
+                <div class="sdg_icon_container_13">
+                  <img id="sdg_13" src="./resources/images/sdg_13.png" alt="Climate Action">
+                </div>
+<!-- sdg_icon_container_13 ends here -->
               </div>
-<!-- sdg_icon_container ends here -->
-              <div class="sdg_icon_container">
-                <img id="sdg_1" src="./resources/images/sdg_1.png" alt="Gender Equality">
-              </div>
-<!-- sdg_icon_container starts here -->
-              <div class="sdg_icon_container">
-                <img id="sdg_4" src="./resources/images/sdg_4.png" alt="Clean Water and Sanitation">
-              </div>
-<!-- sdg_icon_container ends here -->
-<!-- sdg_icon_container starts here -->
-              <div class="sdg_icon_container">
-                <img id="sdg_2" src="./resources/images/sdg_2.png" alt="Affordable and Clean Energy">
-              </div>
-<!-- sdg_icon_container ends here -->
-<!-- sdg_icon_container starts here -->
-              <div class="sdg_icon_container">
-                <img id="sdg_11" src="./resources/images/sdg_11.png" alt="Decent and Economic Growth">
-              </div>
-<!-- sdg_icon_container ends here -->
-<!-- sdg_icon_container starts here -->
-              <div class="sdg_icon_container">
-                <img id="sdg_12" src="./resources/images/sdg_12.png" alt="Climate Action">
-              </div>
-<!-- sdg_icon_container ends here -->
-            </div>
 <!-- row_2 ends here -->
+            </div>
+<!-- row_container_1 ends here -->
+<!-- row_container_2 starts here -->
+            <div class="row_container_2">
+<!-- row_3 starts here -->
+              <div class="row_3">
+<!-- sdg_icon_container_8 starts here -->
+                <div class="sdg_icon_container_8">
+                  <div class="description_8">
+                    <span>Promote sustained, inclusive and sustainable growth, full and productive and decent employment for all</span>
+                  </div>
+                </div>
+<!-- sdg_icon_container_8 ends here -->
+<!-- sdg_icon_container_1 starts here -->
+                <div class="sdg_icon_container_1">
+                  <img id="sdg_1" src="./resources/images/sdg_1.png" alt="Gender Equality">
+                </div>
+<!-- sdg_icon_container_1 ends here -->
+<!-- sdg_icon_container_4 starts here -->
+                <div class="sdg_icon_container_4">
+                  <img id="sdg_4" src="./resources/images/sdg_4.png" alt="Clean Water and Sanitation">
+                </div>
+<!-- sdg_icon_container_4 ends here -->
+              </div>
+<!-- row_3 ends here -->
+<!-- row_4 starts here -->
+              <div class="row_4">
+<!-- sdg_icon_container_2 starts here -->
+                <div class="sdg_icon_container_2">
+                  <img id="sdg_2" src="./resources/images/sdg_2.png" alt="Affordable and Clean Energy">
+                </div>
+<!-- sdg_icon_container_2 ends here -->
+<!-- sdg_icon_container_11 starts here -->
+                <div class="sdg_icon_container_11">
+                  <img id="sdg_11" src="./resources/images/sdg_11.png" alt="Decent and Economic Growth">
+                </div>
+<!-- sdg_icon_container_11 ends here -->
+<!-- sdg_icon_container_12 starts here -->
+                <div class="sdg_icon_container_12">
+                  <img id="sdg_12" src="./resources/images/sdg_12.png" alt="Climate Action">
+                </div>
+<!-- sdg_icon_container_12 ends here -->
+              </div>
+<!-- row_4 ends here -->
+            </div>
+<!-- row_container_2 ends here -->
           </div>
 <!-- sdg_icons starts here -->
         </div>
@@ -171,6 +217,11 @@ Comments ends here -->
 
 <!-- media starts here -->
       <div id="media">
+<!-- media_banner starts here -->
+        <div class="media_banner">
+
+        </div>
+<!-- media_banner ends here -->
 <!-- media_text starts here -->
         <div class="media_text">
           <h1>Media</h1>
@@ -182,6 +233,14 @@ Comments ends here -->
 
 <!-- the_news starts here -->
       <div class="the_news">
+        <div class="new_title">
+          <h1>News and Events</h1>
+        </div>
+<!-- the_news_banner starts here -->
+        <div class="news_banner">
+
+        </div>
+<!-- the_news_banner ends here -->
 <!-- articles starts here -->
         <div class="the_news_text">
 
@@ -190,121 +249,166 @@ Comments ends here -->
       </div>
 <!-- the_news ends here -->
 
-<div></div>
-<div></div>
-<div></div>
-
-<!-- starts here -->
-<!-- ends here -->
-<!-- starts here -->
-<!-- ends here -->
-<!-- starts here -->
-<!-- ends here -->
-<!-- starts here -->
-<!-- ends here -->
-<!-- starts here -->
-<!-- ends here -->
-<!-- starts here -->
-<!-- ends here -->
-<!-- starts here -->
-<!-- ends here -->
-
 <!-- contacts starts here -->
       <div id="contacts">
+<!-- contacts_banner starts here -->
+        <div class="contacts_banner">
+
+        </div>
+<!-- contacts_banner ends here -->
 <!-- contacts_title starts here -->
         <div class="contacts_title">
           <h1>Contacts</h1>
         </div>
 <!-- contacts_title ends here -->
-
+<!-- contacts_desktop starts here -->
+          <div class="contacts_desktop">
 <!-- contacts_row_1 starts here -->
-        <div class="contacts_row_1">
+            <div class="contacts_row_1">
 <!-- contact_1 starts here -->
-          <div class="contact_1">
+              <div class="contact_1">
 <!-- contact_1_banner starts here -->
-            <div class="contact_1_banner">
+                <div class="contact_1_banner">
 <!-- contact_1_mugshot starts here -->
-              <div class="contact_1_mugshot">
-                <img src="./resources/images/profile_pic.png" alt="Nyasha Gwatidzo">
-              </div>
+                  <div class="contact_1_mugshot">
+<!-- contact_1_social_media starts here -->
+                    <div class="contact_1_social_media">
+                      <a href="#"><i class="fa fa-envelope fa-2x"></i></a><a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                    </div>
+<!-- contact_1_social_media ends here -->
+                  </div>
 <!-- contact_1_mugshot ends here -->
-<!-- contact_1_bio starts here -->
-              <div class="contact_1_bio">
-                <h3>NG</h3>
-                <span>How great am I?</span>
-              </div>
-<!-- contact_1_bio ends here -->
-            </div>
-<!-- contact_1_banner ends here -->
-          </div>
-<!-- contact_1 ends here -->
+      <!-- contact_1_bio starts here -->
+                  <div class="contact_1_bio">
+                    <h3>Nyasha Gwatidzo</h3>
+                    <span>Nyasha Gwatidzo is a distinguished business-woman and philanthropist who has had a 25-year career launching and building successful multi-million pound businesses and social enterprises in the United Kingdom, generating a cumulative $130 million turnover and over $25 million EBIT since 1987.  Her pioneering fostering social enterprise Banya Family Placement Agency has placed 4,000 children with UK foster parents since 1987. Nyasha’s achievements have won widespread recognition winning nu-merous prestigious business awards, including European Federation Black Women Business Leader (2000) and others.
 
-<!-- contact_2 starts here -->
-          <div class="contact_2">
-<!-- contact_2_banner starts here -->
-            <div class="contact_2_banner">
-<!-- contact_2_mugshot starts here -->
-              <div class="contact_2_mugshot">
-                <img src="./resources/images/profile_pic.png" alt="Matthew Powell">
+          With a strong interest in ethical investment, solid business acumen and extensive knowledge of South-ern African countries, Nyasha is a formidable business force specializing in social impact start-ups and helping them achieve rapid, profitable and sustainable growth. Nyasha’s academic background in-cludes studies at Imperial College London in Chemistry, a Postgraduate Degree in Business Manage-ment from Cranfield Business School and a Master’s Degree in Therapeutic Childcare from Reading University.  She is also a qualified Social Worker and Counselling Therapist.
+                    </span>
+                  </div>
+      <!-- contact_1_bio ends here -->
+                </div>
+    <!-- contact_1_banner ends here -->
               </div>
-<!-- contact_2_mugshot ends here -->
-<!-- contact_2_bio starts here -->
-              <div class="contact_2_bio">
-                <h3>MP</h3>
-                <span>How great am I?</span>
+  <!-- contact_1 ends here -->
+
+  <!-- contact_2 starts here -->
+              <div class="contact_2">
+    <!-- contact_2_banner starts here -->
+                <div class="contact_2_banner">
+      <!-- contact_2_mugshot starts here -->
+                  <div class="contact_2_mugshot">
+        <!-- contact_2_social_media starts here -->
+                    <div class="contact_2_social_media">
+                      <a href="#"><i class="fa fa-envelope fa-2x"></i></a><a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                    </div>
+        <!-- contact_2_social_media ends here -->
+                  </div>
+      <!-- contact_2_mugshot ends here -->
+      <!-- contact_2_bio starts here -->
+                  <div class="contact_2_bio">
+                    <h3>Matthew Powell</h3>
+                    <span>Matthew brings more than 25 years global business leadership experience delivering revenue & profitability growth in over 40 countries across Europe, Middle East, Africa and Asia Pacific.   Currently a Strategy Advisory & Business Consultant, Matthew previously served for 10 years as General Counsel, Europe, Middle, East Africa (EMEA) for a $ 42 billion revenue, 150,000 employee US multi-national.
+
+                    As an Executive Management Team member for a 12,000 employee $2 billion EMEA business, Matthew negotiated over $4 billion of service contracts and joint ventures. As CEO, Deputy CEO, Board Chairman, Board Director and General Manager led systems integration & facilities services businesses achieving many millions of dollars of revenue and increasing EBIT across Europe and the Middle East.
+
+                    Matthew holds a PhD in Strategy & Program Management, a Juris Doctor (JD), an MBA in Global Management and an MA (Oxford) and BA (Hons) in Philosophy, Politics and Economics.
+                    </span>
+                  </div>
+      <!-- contact_2_bio ends here -->
+                </div>
+    <!-- contact_2_banner ends here -->
               </div>
-<!-- contact_2_bio ends here -->
+  <!-- contact_2 ends here -->
             </div>
-<!-- contact_2_banner ends here -->
-          </div>
-<!-- contact_2 ends here -->
-</div>
 <!-- contacts_row_1 ends here -->
 
 <!-- contacts_row_2 starts here -->
-<div class="contacts_row_2">
-<!-- contact_3 starts here -->
-          <div class="contact_3">
-<!-- contact_3_banner starts here -->
-            <div class="contact_3_banner">
-<!-- contact_3_mugshot starts here -->
-              <div class="contact_3_mugshot">
-                <img src="./resources/images/profile_pic.png" alt="">
+            <div class="contacts_row_2">
+  <!-- contact_3 starts here -->
+              <div class="contact_3">
+    <!-- contact_3_banner starts here -->
+                <div class="contact_3_banner">
+      <!-- contact_3_mugshot starts here -->
+                  <div class="contact_3_mugshot">
+        <!-- contact_3_social_media starts here -->
+                    <div class="contact_3_social_media">
+                      <a href="#"><i class="fa fa-envelope fa-2x"></i></a><a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                    </div>
+        <!-- contact_3_social_media ends here -->
+                  </div>
+      <!-- contact_3_mugshot ends here -->
+      <!-- contact_3_bio starts here -->
+                  <div class="contact_3_bio">
+                    <h3>Other</h3>
+                    <span>How great am I?</span>
+                  </div>
+      <!-- contact_3_bio starts here -->
+                </div>
+    <!-- contact_3_banner ends here -->
               </div>
-<!-- contact_3_mugshot ends here -->
-<!-- contact_3_bio starts here -->
-              <div class="contact_3_bio">
-                <h3>Other</h3>
-                <span>How great am I?</span>
-              </div>
-<!-- contact_3_bio starts here -->
-            </div>
-<!-- contact_3_banner ends here -->
-          </div>
-<!-- contact_3 ends here -->
+  <!-- contact_3 ends here -->
 
-<!-- contact_4 starts here -->
-          <div class="contact_4">
-<!-- contact_4_banner starts here -->
-            <div class="contact_4_banner">
-<!-- contact_4_mugshot starts here -->
-              <div class="contact_4_mugshot">
-                <img src="./resources/images/profile_pic.png" alt="Abdullah-Isa Amole">
+  <!-- contact_4 starts here -->
+              <div class="contact_4">
+    <!-- contact_4_banner starts here -->
+                <div class="contact_4_banner">
+      <!-- contact_4_mugshot starts here -->
+                  <div class="contact_4_mugshot">
+        <!-- contact_4_social_media starts here -->
+                    <div class="contact_4_social_media">
+                      <a href="#"><i class="fa fa-envelope fa-2x"></i></a><a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                    </div>
+        <!-- contact_4_social_media ends here -->
+                  </div>
+      <!-- contact_4_mugshot ends here -->
+      <!-- contact_4_bio starts here -->
+                  <div class="contact_4_bio">
+                    <h3>AIODA</h3>
+                    <span>How great am I?</span>
+                  </div>
+      <!-- contact_4_bio ends here -->
+                </div>
+    <!-- contact_4_banner ends here -->
               </div>
-<!-- contact_4_mugshot ends here -->
-<!-- contact_4_bio starts here -->
-              <div class="contact_4_bio">
-                <h3>AIODA</h3>
-                <span>How great am I?</span>
-              </div>
-<!-- contact_4_bio ends here -->
+  <!-- contact_4 ends here -->
             </div>
-<!-- contact_4_banner ends here -->
-          </div>
-<!-- contact_4 ends here -->
-        </div>
 <!-- contacts_row_2 ends here -->
+          </div>
+<!-- contacts_desktop ends here -->
+<!-- contacts_mobile starts here -->
+        <div class="contacts_mobile">
+          <!-- c1_mobile starts here -->
+          <div class="c1_mobile">
+            <div>
+              <a href="#"><h2>Nyasha Gwatidzo</h2></a>
+            </div>
+          </div>
+          <!-- c1_mobile ends here -->
+          <!-- c2_mobile starts here -->
+          <div class="c2_mobile">
+            <div>
+              <a href="#"><h2>Matthew Powell</h2></a>
+            </div>
+          </div>
+          <!-- c2_mobile ends here -->
+          <!-- c3_mobile starts here -->
+          <div class="c3_mobile">
+            <div>
+              <a href="#"><h2>Other</h2></a>
+            </div>
+          </div>
+          <!-- c3_mobile ends here -->
+          <!-- c4_mobile starts here -->
+          <div class="c4_mobile">
+            <div>
+              <a href="#"><h2>AIODA</h2></a>
+            </div>
+          </div>
+          <!-- c4_mobile ends here -->
 
+        </div>
+<!-- contacts_mobile ends here -->
       </div>
 <!-- contacts ends here -->
     </div>
@@ -314,14 +418,14 @@ Comments ends here -->
 <!-- footer-logo starts here -->
         <div class="footer-logo">
           <div class="logo">
-
+            <img src="./resources/images/wic_logo.png" alt="company logo">
           </div>
-          <span>copyright World Impact Capital 2018</span>
+          <span>© 2018. World Impact Capital Ltd. All rights reserved.</span>
         </div>
 <!-- footer-logo ends here -->
 <!-- footer-text starts here -->
         <div class="footer-text">
-          <span>Created by YG&B</span>
+          <span><a href="#">Created by YG&B</a></span>
         </div>
 <!-- footer-text ends here -->
       </footer>
