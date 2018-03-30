@@ -647,9 +647,9 @@
 
 /* calendar END */
 
-/* contacts START */
+/* about-us START */
 
-  #contacts {
+  #about-us {
     padding: 0px;
     display: flex;
     flex-direction: column;
@@ -657,7 +657,7 @@
     align-self: center;
   }
 
-  .contacts_row_1 {
+  .about-us-row-1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -666,39 +666,39 @@
     background-color: rgb(255, 249, 241);
   }
 
-  .contact_1, .contact_2, .contact_3, .contact_4 {
+  .about-1, .about-2, .about-3, .about-4 {
     padding: 4px;
     min-width: 25%;
   }
 
-  .contact_1_bio, .contact_2_bio, .contact_3_bio, .contact_4_bio {
+  .about-1-bio, .about-2-bio, .about-3-bio, .about-4-bio {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
 
-  #contacts h3 {
+  #about-us h3 {
     text-align: center;
   }
 
-  .contact_1_banner, .contact_2_banner, .contact_3_banner, .contact_4_banner {
+  .about-1-banner, .about-2-banner, .about-3-banner, .about-4-banner {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .contact_1_mugshot, .contact_2_mugshot, .contact_3_mugshot, .contact_4_mugshot {
+  .about-1-mugshot, .about-2-mugshot, .about-3-mugshot, .about-4-mugshot {
     width: 100%;
     display: flex;
     justify-content: center;
     height: 200px;
   }
 
-  .contact_1_mugshot a, .contact_2_mugshot a, .contact_3_mugshot a, .contact_4_mugshot a {
+  .about-1-mugshot a, .about-2-mugshot a, .about-3-mugshot a, .about-4-mugshot a {
     width: 100%;
   }
 
-  .contact_1_social_media, .contact_2_social_media, .contact_3_social_media, .contact_4_social_media {
+  .about-1-social-media, .about-2-social-media, .about-3-social-media, .about-4-social-media {
     height: 100%;
     padding: 12px;
     visibility: hidden;
@@ -708,15 +708,15 @@
     justify-content: center;
   }
 
-  .contact_1_social_media span, .contact_2_social_media span, .contact_3_social_media span, .contact_4_social_media span {
+  .about-1-social-media span, .about-2-social-media span, .about-3-social-media span, .about-4-social-media span {
     text-decoration: none;
   }
 
-  .contact_1_social_media span:hover, .contact_2_social_media span:hover, .contact_3_social_media span:hover, .contact_4_social_media span:hover {
+  .about-1-social-media span:hover, .about-2-social-media span:hover, .about-3-social-media span:hover, .about-4-social-media span:hover {
     color: rgb(30, 0, 181);
   }
 
-  .contact_1_mugshot, .contact_2_mugshot, .contact_3_mugshot, .contact_4_mugshot {
+  .about-1-mugshot, .about-2-mugshot, .about-3-mugshot, .about-4-mugshot {
     background-image: url("../../resources/images/profile_pic.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -724,69 +724,69 @@
   }
 
   @media only screen and (max-width: 950px) {
-    .contact_1_mugshot, .contact_2_mugshot, .contact_3_mugshot, .contact_4_mugshot {
+    .about-1-mugshot, .about-2-mugshot, .about-3-mugshot, .about-4-mugshot {
       background-size: cover;
     }
   }
 
-  .contact_1_mugshot:hover .contact_1_social_media, .contact_2_mugshot:hover .contact_2_social_media, .contact_3_mugshot:hover .contact_3_social_media, .contact_4_mugshot:hover .contact_4_social_media {
+  .about-1-mugshot:hover .about-1-social-media, .about-2-mugshot:hover .about-2-social-media, .about-3-mugshot:hover .about-3-social-media, .about-4-mugshot:hover .about-4-social-media {
     visibility: visible;
   }
 
-  .contact_1_mugshot:hover, .contact_2_mugshot:hover, .contact_3_mugshot:hover, .contact_4_mugshot:hover {
+  .about-1-mugshot:hover, .about-2-mugshot:hover, .about-3-mugshot:hover, .about-4-mugshot:hover {
     opacity: 0.5;
   }
 
-  #contacts i {
+  #about-us i {
     margin: 8px;
   }
 
-  .contacts_mobile {
+  .about-us-mobile {
     display: flex;
     flex-direction: column;
   }
 
-  .contacts_mobile h2 {
+  .about-us-mobile h2 {
     text-align: center;
     font-size: 20px;
   }
 
-  .contacts_mobile a {
+  .about-us-mobile a {
     color: rgb(77, 92, 89);
     text-decoration: none;
     font-size: 20px;
   }
 
-  .c1_mobile, .c2_mobile, .c3_mobile, .c4_mobile {
+  .au1-mobile, .au2-mobile, .au3-mobile, .au4-mobile {
     display: flex;
     justify-content: center;
   }
 
-  .c1_mobile:hover, .c2_mobile:hover, .c3_mobile:hover, .c4_mobile:hover {
+  .au1-mobile:hover, .au2-mobile:hover, .au3-mobile:hover, .au4-mobile:hover {
     background: rgb(77, 92, 89);
   }
 
-  .c1_mobile:hover > div a, .c2_mobile:hover > div a, .c3_mobile:hover > div a, .c4_mobile:hover > div a {
+  .au1-mobile:hover > div a, .au2-mobile:hover > div a, .au3-mobile:hover > div a, .au4-mobile:hover > div a {
     color: rgb(255, 255, 255);
   }
 
   @media only screen and (max-width: 850px) {
-    .contacts_row_1, .contacts_row_2, .contacts_desktop .full-team {
+    .about-us-row-1, .about-us-row-2, .about-us-desktop .full-team {
       display: none;
     }
   }
 
   @media only screen and (min-width: 850px) {
-    .contacts_mobile {
+    .about-us-mobile {
       display: none;
     }
   }
 
-/* contacts END */
+/* about-us END */
 
-/* contacts_banner START */
+/* about-us-banner START */
 
-.contacts_banner {
+.about-us-banner {
   height: 275px;
   width: 100%;
   background-image: url("../../resources/images/addo_elephant_national_park.jpg");
@@ -797,22 +797,22 @@
 }
 
 @media only screen and (max-width: 1000px) {
-  .contacts_banner {
+  .about-us-banner {
     height: 250px;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .contacts_banner {
+  .about-us-banner {
     height: 225px;
   }
 }
 
-/* contacts_banner END */
+/* about-us-banner END */
 
-/* contacts_desktop START */
+/* about-us-desktop START */
 
-  .contacts_desktop {
+  .about-us-desktop {
     padding: 8px 0px;
     display: flex;
     flex-direction: column;
@@ -821,7 +821,7 @@
     background-color: transparent;
   }
 
-/* contacts_desktop END */
+/* about-us-desktop END */
 
 /* full_team START */
 
@@ -830,7 +830,7 @@
     text-align: center;
   }
 
-  .contacts_desktop .full-team a {
+  .about-us-desktop .full-team a {
     font-size: 24px;
   }
 
@@ -874,18 +874,18 @@
 
 /* fa-linkedin END */
 
-/* contacts_title START */
+/* about-us-title START */
 
-  .contacts_title {
+  .about-us-title {
     padding-bottom: 0px;
   }
 
-  .contacts_title h1 {
+  .about-us-title h1 {
     text-align: center;
     margin: 32px 0px 10px 0px;
   }
 
-/* contacts_title END */
+/* about-us-title END */
 
 /* our_impact START */
 
