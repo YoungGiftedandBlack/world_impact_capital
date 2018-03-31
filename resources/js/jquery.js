@@ -7,49 +7,55 @@ Could a scroll event change the section from one section to another? */
 /* button to show/hide the navigation. The animation has the banners slide to the away to the left and starting with about_the_comp downwards */
 
 $(document).ready(function(){
-  $(".title-1").click(function(){
+  $(".banner").click(function(){
     $(this).toggleClass("alternate normal");
   });
 });
 
 $(document).ready(function(){
+  $(".banner").click(function(){
+    $(this).toggleClass("normal-banner extended-banner");
+  });
+});
+
+$(document).ready(function(){
     $("#about-the-comp .banner").click(function(){
-        $(".about-the-comp-text").toggle(500);
+        $(".about-the-comp-text").toggle(800);
     });
 });
 
 $(document).ready(function(){
     $("#our-impact .banner").click(function(){
-        $(".our-impact-text").toggle("slow");
+        $(".our-impact-text").toggle(800);
     });
 });
 
 $(document).ready(function(){
     $("#media .banner").click(function(){
-        $(".media-text").toggle(500);
+        $(".media-text").toggle(800);
     });
 });
 
 $(document).ready(function(){
     $("#the-news .banner").click(function(){
-        $(".news-text").toggle(500);
+        $(".news-text").toggle(800);
     });
 });
 
 $(document).ready(function(){
     $("#about-us .banner").click(function(){
-        $(".about-us-desktop").toggle(500);
+        $(".about-us-text").toggle(800);
     });
 });
 
 $(document).ready(function(){
     $("#partners-and-affiliates .banner").click(function(){
-        $(".partners-text").toggle(500);
+        $(".partners-text").toggle(800);
     });
 });
 
 $(document).ready(function(){
     $("#our-portfolio .banner").click(function(){
-        $("portfolio-text").toggle(500);
+        $("portfolio-text").toggle(800);
     });
 });
