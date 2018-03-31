@@ -9,7 +9,12 @@ Font Awesome icons to the contacts section, to make it look more professional...
 Should use Bootstraps, include scripts at the bottom to prevent it being top-heavy and not loading quickly.
 Could make the header intially see-through and then change at 100px from the top. Maybe try setting the background of a whole section to be a picture
 and then make the title div have a transparent background so that as you scroll it moves? Also would have to set the title font color to white?
-Could maybe remove the bios and have a layout similar to Cpria VC?
+Could maybe remove the bios and have a layout similar to Capria VC?
+The site looks absolutely gorgeous if you hide the bodies of text and have the nav bar be the banners!!
+Could I include blur effects on the nav-bar?
+Add more dynamism to the header menu options, with transitions?
+Could include the slide transitions from hellomonday.com?
+Would be nice if there was a bounce animation on the fa-envelope icon and a grow animation on the LinkedIn icon
 Comments ends here -->
 <!-- head starts here -->
   <head>
@@ -19,6 +24,7 @@ Comments ends here -->
     <link href="./resources/css/index.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="icon" href="./resources/images/favicon.ico" type="image-/x-icon">
+    <script type="text/javascript" src="./resources/js/jquery.js"></script>
   </head>
 <!-- head ends here -->
 
@@ -28,19 +34,21 @@ Comments ends here -->
     <!-- header starts here -->
     <header>
       <div class="header-container">
-        <div class="wic_logo">
+        <div class="wic-logo">
           <div class="logo">
             <img src="./resources/images/wic_logo.png" alt="company logo">
           </div>
           <span>World Impact Capital</span>
         </div>
-        <div class="nav_items">
+        <div class="nav-items">
           <nav class="desktop">
             <ul>
-              <li><h1><a href="#about_the_comp">About the Company</a></h1></li>
-              <li><h1><a href="#our_impact">Our Impact</a></h1></li>
+              <li><h1 class="button"><a href="#about-the-comp">About the Company</a></h1></li>
+              <li><h1><a href="#our-impact">Our Impact</a></h1></li>
               <li><h1><a href="#media">Media</a></h1></li>
               <li><h1><a href="#about-us">About Us</a></h1></li>
+              <li><h1><a href="#partners-and-affiliates">Our Partners</a></h1></li>
+              <li><h1><a href="#our-portfolio">Portfolio</a></h1></li>
             </ul>
           </nav>
           <nav class="mobile">
@@ -53,210 +61,227 @@ Comments ends here -->
 
     <!-- site-container starts here -->
     <div class="site-container">
-
-      <!-- about_the_comp starts here -->
-      <div id="about_the_comp">
-        <div class="about_the_comp_banner">
-          <div class="title">
-            <h1 style="color: rgb(0, 0, 0); padding-right: 8px; margin-top: -32px;">About</h1><h1 style="margin-bottom: -32px;">World Impact Capital</h1>
+      <section>
+        <!-- about-the-comp starts here -->
+        <div id="about-the-comp">
+          <div class="banner">
+            <div class="title">
+              <h1 style="color: rgb(0, 0, 0); padding-right: 8px; margin-top: -32px;">About</h1><h1 style="margin-bottom: -32px;">World Impact Capital</h1>
+            </div>
           </div>
-        </div>
-        <div class="about_the_comp_text">
-          <span>World Impact Capital (WIC) was inspired by the Shona notion of a “Dura” meaning a “hut” traditionally used to store family assets such as the annual food harvest. A Dura is customarily owned by the woman of the household, who uses these assets as a security “safety net” for her family over the course of the year.
-When launched, WIC Fund I will be an Impact Investment fund offering an exciting investment opportunity in Southern African markets for sophisticated investors wishing to participate in some of the premier frontier market growth stories of the 21st Century, earn market-rate financial returns and simultaneously create transformational social impact.
-In addition to earning competitive returns, investments will be designed to generate employment and "decent" job creation, help raise living standards and improve financial security for local communities, just as a Dura is intended to do for local families. We believe market-rate financial returns and positive impact creation need not be mutually exclusive, but rather can be complementary and mutually reinforcing</span>
-        </div>
-      </div>
-      <!-- about_the_comp ends here -->
-
-      <!-- our_impact starts here -->
-      <div id="our_impact">
-<!-- our_impact_banner starts here -->
-        <div class="our_impact_banner">
-          <div class="title">
-            <h1 style="padding-right: 8px;">Our</h1><h1>Impact</h1>
+          <div class="about-the-comp-text">
+            <span>World Impact Capital (WIC) was inspired by the Shona notion of a “Dura” meaning a “hut” traditionally used to store family assets such as the annual food harvest. A Dura is customarily owned by the woman of the household, who uses these assets as a security “safety net” for her family over the course of the year.
+              When launched, WIC Fund I will be an Impact Investment fund offering an exciting investment opportunity in Southern African markets for sophisticated investors wishing to participate in some of the premier frontier market growth stories of the 21st Century, earn market-rate financial returns and simultaneously create transformational social impact.
+              In addition to earning competitive returns, investments will be designed to generate employment and "decent" job creation, help raise living standards and improve financial security for local communities, just as a Dura is intended to do for local families. We believe market-rate financial returns and positive impact creation need not be mutually exclusive, but rather can be complementary and mutually reinforcing</span>
+            </div>
           </div>
-        </div>
-        <div class="our_impact_text">
-          <span></span>
-        </div>
-        <div class="sdg">
-          <div class="sdg_text">
-            <h2>Sustainable Developemnt Goals</h2>
+          <!-- about-the-comp ends here -->
+
+      </section>
+
+      <section>
+        <!-- our-impact starts here -->
+        <div id="our-impact">
+          <!-- our-impact-banner starts here -->
+          <div class="banner">
+            <div class="title">
+              <h1 style="padding-right: 8px;">Our</h1><h1>Impact</h1>
+            </div>
+          </div>
+          <div class="our-impact-text">
             <span></span>
           </div>
-          <div class="sdg_icons_container">
-            <div class="row_container_1">
-              <div class="row_1">
-                <div class="sdg_icon_container_3">
-                  <img id="sdg_3" src="./resources/images/sdg_3.png" alt="Good health and Wellbeing">
-                  <span></span>
-                </div>
-                <div class="sdg_icon_container_5">
-                  <div class="description_5">
-                    <span>Achieve gender equality and empower all women and girls</span>
+          <div class="sdg">
+            <div class="sdg-text">
+              <h2>Sustainable Developemnt Goals</h2>
+              <span></span>
+            </div>
+            <div class="sdg-icons-container">
+              <div class="row-container-1">
+                <div class="row-1">
+                  <div class="sdg-icon-container-3">
+                    <img id="sdg-3" src="./resources/images/sdg_3.png" alt="Good health and Wellbeing">
+                    <span></span>
+                  </div>
+                  <div class="sdg-icon-container-5">
+                    <div class="description-5">
+                      <span>Achieve gender equality and empower all women and girls</span>
+                    </div>
+                  </div>
+                  <div class="sdg-icon-container-6">
+                    <img id="sdg-6" src="./resources/images/sdg_6.png" alt="Clean Water and Sanitation">
+                    <span></span>
                   </div>
                 </div>
-                <div class="sdg_icon_container_6">
-                  <img id="sdg_6" src="./resources/images/sdg_6.png" alt="Clean Water and Sanitation">
-                  <span></span>
-                </div>
-              </div>
-              <div class="row_2">
-                <div class="sdg_icon_container_7">
-                  <img id="sdg_7" src="./resources/images/sdg_7.png" alt="Affordable and Clean Energy">
-                  <span></span>
-                </div>
-                <div class="sdg_icon_container_9">
-                  <img id="sdg_9" src="./resources/images/sdg_9.png" alt="Decent and Economic Growth">
-                </div>
-                <div class="sdg_icon_container_13">
-                  <img id="sdg_13" src="./resources/images/sdg_13.png" alt="Climate Action">
-                </div>
-              </div>
-            </div>
-            <div class="row_container_2">
-              <div class="row_3">
-                <div class="sdg_icon_container_8">
-                  <div class="description_8">
-                    <span>Promote sustained, inclusive and sustainable growth, full and productive and decent employment for all</span>
+                <div class="row-2">
+                  <div class="sdg-icon-container-7">
+                    <img id="sdg-7" src="./resources/images/sdg_7.png" alt="Affordable and Clean Energy">
+                    <span></span>
+                  </div>
+                  <div class="sdg-icon-container-9">
+                    <img id="sdg-9" src="./resources/images/sdg_9.png" alt="Decent and Economic Growth">
+                  </div>
+                  <div class="sdg-icon-container-13">
+                    <img id="sdg-13" src="./resources/images/sdg_13.png" alt="Climate Action">
                   </div>
                 </div>
-                <div class="sdg_icon_container_1">
-                  <img id="sdg_1" src="./resources/images/sdg_1.png" alt="Gender Equality">
-                </div>
-                <div class="sdg_icon_container_4">
-                  <img id="sdg_4" src="./resources/images/sdg_4.png" alt="Clean Water and Sanitation">
-                </div>
               </div>
-              <div class="row_4">
-                <div class="sdg_icon_container_2">
-                  <img id="sdg_2" src="./resources/images/sdg_2.png" alt="Affordable and Clean Energy">
+              <div class="row-container-2">
+                <div class="row-3">
+                  <div class="sdg-icon-container-8">
+                    <div class="description-8">
+                      <span>Promote sustained, inclusive and sustainable growth, full and productive and decent employment for all</span>
+                    </div>
+                  </div>
+                  <div class="sdg-icon-container-1">
+                    <img id="sdg-1" src="./resources/images/sdg_1.png" alt="Gender Equality">
+                  </div>
+                  <div class="sdg-icon-container-4">
+                    <img id="sdg-4" src="./resources/images/sdg_4.png" alt="Clean Water and Sanitation">
+                  </div>
                 </div>
-                <div class="sdg_icon_container_11">
-                  <img id="sdg_11" src="./resources/images/sdg_11.png" alt="Decent and Economic Growth">
-                </div>
-                <div class="sdg_icon_container_12">
-                  <img id="sdg_12" src="./resources/images/sdg_12.png" alt="Climate Action">
+                <div class="row-4">
+                  <div class="sdg-icon-container-2">
+                    <img id="sdg-2" src="./resources/images/sdg_2.png" alt="Affordable and Clean Energy">
+                  </div>
+                  <div class="sdg-icon-container-11">
+                    <img id="sdg-11" src="./resources/images/sdg_11.png" alt="Decent and Economic Growth">
+                  </div>
+                  <div class="sdg-icon-container-12">
+                    <img id="sdg-12" src="./resources/images/sdg_12.png" alt="Climate Action">
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="the_sadc">
-          <div class="sadc_text">
-            <h2>The Southern African Development Community</h2>
-            <span>Southern African Development Community (SADC) countries include:
-Angola, Botswana, DR Congo, Lesotho, Madagascar, Malawi, Mauritius, Mozambique, Namibia Seychelles, South Africa, Swaziland, Tanzania, Zambia, Zimbabwe</span>
+          <div class="the-sadc">
+            <div class="sadc-text">
+              <h2>The Southern African Development Community</h2>
+              <span>Southern African Development Community (SADC) countries include:
+                Angola, Botswana, DR Congo, Lesotho, Madagascar, Malawi, Mauritius, Mozambique, Namibia Seychelles, South Africa, Swaziland, Tanzania, Zambia, Zimbabwe</span>
+              </div>
+              <div class="sadc-montage">
+              </div>
+            </div>
           </div>
-          <div class="sadc_montage">
-          </div>
-        </div>
-      </div>
-      <!-- our_impact ends here -->
+          <!-- our-impact ends here -->
 
-      <!-- media starts here -->
-      <div id="media">
-        <div class="media_banner">
-          <div class="title">
-            <h1>Media</h1>
-          </div>
-        </div>
-        <div class="media_text">
-          <span></span>
-        </div>
-      </div>
-      <div class="the_news">
-        <div class="news_banner">
-          <div class="title">
-            <h1>News and Events</h1>
-          </div>
-        </div>
-        <div class="heading">
-          <h2>News</h2>
-        </div>
-        <div class="newsstand">
-          <div class="main-story">
-            <a href="#" target="_blank">
-              <div class="main">
-                <div class="photo">
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="side">
-            <div class="story-1">
-            <a href="#" target="_blank">
-              <div class="photo">
-              </div>
-              <span>Lagos thrives, what can the rest of Nigeria learn from the ex-capital</span>
-            </a>
-          </div>
-          <div class="story-2">
-            <a href="#" target="_blank">
-                <div class="photo">
-                </div>
-                <span>South Africa's Central Bank cuts main interest rate</span>
-            </a>
-          </div>
-          <div class="story-3">
-            <a href="#" target="_blank">
-              <div class="photo">
-              </div>
-              <span>$500m Angolan scandal allegedly carried out by son Angola's ex-president</span>
-            </a>
-          </div>
-          </div>
-        </div>
-        <div class="events-calendar">
-          <div class="heading">
-            <h2>Events</h2>
-          </div>
-          <div class="calendar-desktop">
-            <a href="#">
-              <div class="roadshow">
-                <span>WIC hosts WEOF Events across East Africa</span>
-              </div>
-            </a>
-            <a href="#">
-              <div class="AFSIC-2018">
-                <span>WIC attends AFSIC 2018</span>
-              </div>
-            </a>
-            <a href="#">
-              <div class="wic-first-advisor">
-              <span>WIC attends .......</span>
-              </div>
-            </a>
-          </div>
-          <div class="calendar-mobile">
-            <div class="">
-              <a href="#">WEOF Event in E. Africa</a>
-            </div>
-            <div class="">
-              <a href="#">WIC attends AFSIC 2018</a>
-            </div>
-            <div class="">
-              <a href="#">WIC attends...</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- the_news ends here -->
+      </section>
 
-      <!-- about-us starts here -->
-      <div id="about-us">
-        <div class="about-us-banner">
-          <div class="title">
-            <h1 style="padding-right: 8px;">About</h1><h1>Us</h1>
+      <section>
+        <!-- media starts here -->
+        <div id="media">
+          <div class="banner">
+            <div class="title">
+              <h1>Media</h1>
+            </div>
+          </div>
+          <div class="media-text">
+            <span></span>
           </div>
         </div>
+        <!--media ends here -->
+      </section>
+
+      <section>
+        <!-- the-news starts here -->
+        <div id="the-news">
+          <div class="banner">
+            <div class="title">
+              <h1>News and Events</h1>
+            </div>
+          </div>
+          <div class="news-text">
+            <div class="heading">
+              <h2>News</h2>
+            </div>
+            <div class="newsstand">
+              <div class="main-story">
+                <a href="#" target="-blank">
+                  <div class="main">
+                    <div class="photo">
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="side">
+                <div class="story-1">
+                  <a href="#" target="-blank">
+                    <div class="photo">
+                    </div>
+                    <span>Lagos thrives, what can the rest of Nigeria learn from the ex-capital</span>
+                  </a>
+                </div>
+                <div class="story-2">
+                  <a href="#" target="-blank">
+                    <div class="photo">
+                    </div>
+                    <span>South Africa's Central Bank cuts main interest rate</span>
+                  </a>
+                </div>
+                <div class="story-3">
+                  <a href="#" target="-blank">
+                    <div class="photo">
+                    </div>
+                    <span>$500m Angolan scandal allegedly carried out by son Angola's ex-president</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="events-calendar">
+              <div class="heading">
+                <h2>Events</h2>
+              </div>
+              <div class="calendar-desktop">
+                <a href="#">
+                  <div class="roadshow">
+                    <span>WIC hosts WEOF Events across East Africa</span>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="AFSIC-2018">
+                    <span>WIC attends AFSIC 2018</span>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="wic-first-advisor">
+                    <span>WIC attends .......</span>
+                  </div>
+                </a>
+              </div>
+              <div class="calendar-mobile">
+                <div class="">
+                  <a href="#">WEOF Event in E. Africa</a>
+                </div>
+                <div class="">
+                  <a href="#">WIC attends AFSIC 2018</a>
+                </div>
+                <div class="">
+                  <a href="#">WIC attends...</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- the-news ends here -->
+
+      </section>
+
+      <section>
+        <!-- about-us starts here -->
+        <div id="about-us">
+          <div class="banner">
+            <div class="title">
+              <h1 style="padding-right: 8px;">About</h1><h1>Us</h1>
+            </div>
+          </div>
           <div class="about-us-desktop">
             <div class="about-us-row-1">
               <div class="about-1">
                 <div class="about-1-banner">
                   <div class="about-1-mugshot">
-                    <a href="#" target="_blank">
+                    <a href="#" target="-blank">
                       <div class="about-1-social-media">
                         <span>View Profile...</span>
                       </div>
@@ -273,7 +298,7 @@ Angola, Botswana, DR Congo, Lesotho, Madagascar, Malawi, Mauritius, Mozambique, 
               <div class="about-2">
                 <div class="about-2-banner">
                   <div class="about-2-mugshot">
-                    <a href="#" target="_blank">
+                    <a href="#" target="-blank">
                       <div class="about-2-social-media">
                         <span>View Profile...</span>
                       </div>
@@ -290,10 +315,10 @@ Angola, Botswana, DR Congo, Lesotho, Madagascar, Malawi, Mauritius, Mozambique, 
               <div class="about-3">
                 <div class="about-3-banner">
                   <div class="about-3-mugshot">
-                    <a href="#" target="_blank">
-                    <div class="about-3-social-media">
-                      <span>View Profile...</span>
-                    </div>
+                    <a href="#" target="-blank">
+                      <div class="about-3-social-media">
+                        <span>View Profile...</span>
+                      </div>
                     </a>
                   </div>
                   <div class="about-4-bio">
@@ -307,7 +332,7 @@ Angola, Botswana, DR Congo, Lesotho, Madagascar, Malawi, Mauritius, Mozambique, 
               <div class="about-4">
                 <div class="about-4-banner">
                   <div class="about-4-mugshot">
-                    <a href="#" target="_blank">
+                    <a href="#" target="-blank">
                       <div class="about-4-social-media">
                         <span>View Profile...</span>
                       </div>
@@ -326,68 +351,90 @@ Angola, Botswana, DR Congo, Lesotho, Madagascar, Malawi, Mauritius, Mozambique, 
               <span><a href="#">View Full WIC Team</a></span>
             </div>
           </div>
-        <div class="about-us-mobile">
-          <div class="au1-mobile">
-            <div>
-              <a href="#"><h2>Nyasha Gwatidzo</h2></a>
+          <div class="about-us-mobile">
+            <div class="au1-mobile">
+              <div>
+                <a href="#"><h2>Nyasha Gwatidzo</h2></a>
+              </div>
             </div>
-          </div>
-          <div class="au2-mobile">
-            <div>
-              <a href="#"><h2>Matthew Powell</h2></a>
+            <div class="au2-mobile">
+              <div>
+                <a href="#"><h2>Matthew Powell</h2></a>
+              </div>
             </div>
-          </div>
-          <div class="au3-mobile">
-            <div>
-              <a href="#"><h2>Other</h2></a>
+            <div class="au3-mobile">
+              <div>
+                <a href="#"><h2>Other</h2></a>
+              </div>
             </div>
-          </div>
-          <div class="au4-mobile">
-            <div>
-              <a href="#"><h2>AIODA</h2></a>
+            <div class="au4-mobile">
+              <div>
+                <a href="#"><h2>AIODA</h2></a>
+              </div>
             </div>
-          </div>
-          <div class="full-team">
-            <a href="#">View Full WIC Team</a>
+            <div class="full-team">
+              <a href="#">View Full WIC Team</a>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- contacts ends here -->
+        <!-- contacts ends here -->
 
-      <!-- partners and affiliates starts here -->
-      <div class="partners-and-affiliates">
-        <div class="partners_banner">
-          <h1 class="our">Our</h1><h1 class="partners">Partners</h1><h1 class="pride">Pride</h1>
+      </section>
+
+      <section>
+        <!-- partners and affiliates starts here -->
+        <div id="partners-and-affiliates">
+          <div class="banner">
+            <div class="title">
+              <h1 class="our" style="padding-right: 8px">Our</h1><h1 class="partners">Partners</h1><h1 class="pride">Pride</h1>
+              <!-- would be nice if when you hovered over this it transitioned like the 5th heading transition on typmanus -->
+
+
+            </div>
+
+          </div>
+          <div class="partner-text">
+
+          </div>
 
         </div>
+        <!-- partners and affiliates ends here -->
 
-      </div>
-      <!-- partners and affiliates ends here -->
+      </section>
 
-      <!-- our portfolio starts here -->
-      <div class="our_portfolio">
-        <div class="portfolio-banner">
-          <div class="">
-            <h1>O</h1><h1>U</h1><h1>R</h1>
+      <section>
+        <!-- our portfolio starts here -->
+        <div id="our-portfolio">
+          <div class="banner">
+            <div class="title">
+              <div class="line" style="padding-right: 8px;">
+                <h1>O</h1><h1>u</h1><h1>r</h1>
+
+              </div>
+              <div class="line">
+                <h1>P</h1><h1>o</h1><h1>r</h1>
+
+              </div>
+              <div class="line">
+                <h1>t</h1><h1>f</h1><h1>o</h1>
+
+              </div>
+              <div class="line">
+                <h1>l</h1><h1>i</h1><h1>o</h1>
+
+              </div>
+
+            </div>
+            <!-- Use the banner from Yuto Takahashi's website on Awwwwwards to design the banner -->
+          </div>
+          <div class="portfolio-text">
 
           </div>
-          <div class="">
-            <h1>P</h1><h1>O</h1><h1>R</h1>
 
-          </div>
-          <div class="">
-            <h1>T</h1><h1>F</h1><h1>O</h1>
-
-          </div>
-          <div class="">
-            <h1>L</h1><h1>I</h1><h1>O</h1>
-
-          </div>
-          <!-- Use the banner from Yuto Takahashi's website on Awwwwwards to design the banner -->
         </div>
+        <!-- our portfolio ends here -->
 
-      </div>
-      <!-- our portfolio ends here -->
+      </section>
 
     </div>
     <!-- site-container ends here -->
@@ -409,5 +456,6 @@ Angola, Botswana, DR Congo, Lesotho, Madagascar, Malawi, Mauritius, Mozambique, 
     </footer>
       <!-- footer ends here -->
   </body>
+
 <!-- body ends here -->
 </html>

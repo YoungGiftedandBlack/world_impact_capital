@@ -109,16 +109,16 @@
 
 /* site-container END */
 
-/* wic_logo START */
+/* wic-logo START */
 
-  .wic_logo {
+  .wic-logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     width: 50%;
   }
 
-  .wic_logo span {
+  .wic-logo span {
     font-size: 30px;
     color: #4a4a4a;
     font-family: "Playfair Display";
@@ -127,12 +127,12 @@
   }
 
   @media only screen and (max-width: 850px) {
-    .wic_logo {
+    .wic-logo {
       display: none;
     }
   }
 
-/* wic_logo END */
+/* wic-logo END */
 
 /* logo START */
 
@@ -160,9 +160,9 @@
 
 /* header-container END */
 
-/* nav_items START */
+/* nav-items START */
 
-  .nav_items {
+  .nav-items {
     margin: 0;
     padding: 0;
     width: 60%;
@@ -172,12 +172,12 @@
   }
 
   @media only screen and (max-width: 850px) {
-    .nav_items {
+    .nav-items {
       width: 100%;
     }
   }
 
-/* nav_items END */
+/* nav-items END */
 
 /* desktop START */
 
@@ -215,6 +215,26 @@
     border-bottom: 1.5px solid rgb(30, 0, 181);
   }
 
+  @media only screen and (max-width: 1050px) {
+    .desktop a {
+      font-size: 14px;
+    }
+
+    .desktop li {
+      padding: 1.25px 5px;
+    }
+  }
+
+  @media only screen and (max-width: 950px) {
+    .desktop a {
+      font-size: 12px;
+    }
+
+    .desktop li {
+      padding: 1.25px 2.5px;
+    }
+  }
+
   @media only screen and (max-width: 850px) {
     .desktop {
       display: none;
@@ -247,38 +267,83 @@
 
 /* mobile END */
 
-/* about_the_comp START */
+/* about-the-comp START */
 
-  #about_the_comp {
+  #about-the-comp {
     padding: 0px;
   }
 
-/* about_the_comp END */
+/* about-the-comp END */
 
-/* about_the_comp_banner START */
+/* banner START */
 
-  .about_the_comp_banner {
-    height: 275px;
+  .banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 150px;
     width: 100%;
-    background-image: url("../../resources/images/kilimanjaro.jpg");
     background-size: cover;
+    background-position: top top;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
 
+#about-the-comp .banner {
+  background-image: url("../../resources/images/kilimanjaro.jpg");
+}
+
+#our-impact .banner {
+  background-image: url("../../resources/images/zambezi_river.jpg");
+  background-position: bottom;
+}
+
+#media .banner {
+  background-image: url("../../resources/images/serengeti_national_park.jpg");
+}
+
+#the-news .banner {
+  background-image: url("../../resources/images/kirstenbosch_botanical_gardens.jpg");
+}
+
+#about-us .banner {
+  background-image: url("../../resources/images/addo_elephant_national_park.jpg");
+}
+
+#partners-and-affiliates .banner {
+  background-image: url("../../resources/images/pride-east-african-safari.jpg");
+}
+
+.pride {
+  height: 0%;
+  width: 0%;
+  margin-bottom: 0%;
+  opacity: 0;
+  display: none;
+}
+
+#our-portfolio .banner {
+  background-image: url("../../resources/images/cape-town-beach-llandudno.jpg");
+}
+
+#our-portfolio .line {
+  display: flex;
+  flex-direction: row;
+}
+
   @media only screen and (max-width: 1000px) {
-    .about_the_comp_banner {
-      height: 250px;
+    .banner {
+      height: 100px;
     }
   }
 
   @media only screen and (max-width: 900px) {
-    .about_the_comp_banner {
-      height: 225px;
+    .banner {
+      height: 75px;
     }
   }
 
-/* about_the_comp_banner END */
+/* banner END */
 
 /* title START */
 
@@ -286,7 +351,6 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
 
   .title h1 {
@@ -298,27 +362,45 @@
     font-size: 70px;
   }
 
+  @media only screen and (max-width: 950px) {
+    .title h1 {
+      font-size: 60px;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    .title h1 {
+      font-size: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 685px) {
+    .title h1 {
+      font-size: 40px;
+    }
+  }
+
 /* title END */
 
-/* about_the_comp_text START */
+/* about-the-comp-text START */
 
-  .about_the_comp_text {
+  .about-the-comp-text {
     display: flex;
     flex-direction: column;
     padding: 32px 8px 32px 8px;
   }
 
   @media only screen and (max-width: 850px) {
-    .about_the_comp_text {
+    .about-the-comp-text {
       padding-bottom: 8px;
     }
   }
 
-  .about_the_comp_text h1 {
+  .about-the-comp-text h1 {
     text-align: center;
   }
 
-/* about_the_comp_text END */
+/* about-the-comp-text END */
 
 /* media START */
 
@@ -328,86 +410,31 @@
 
 /* media END */
 
-/* media_banner START */
+/* media-text START */
 
-  .media_banner {
-    height: 275px;
-    width: 100%;
-    background-image: url("../../resources/images/serengeti_national_park.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-
-  @media only screen and (max-width: 1000px) {
-    .media_banner {
-      height: 250px;
-    }
-  }
-
-  @media only screen and (max-width: 900px) {
-    .media_banner {
-      height: 225px;
-    }
-  }
-
-/* media_banner END */
-
-/* media_text START */
-
-  .media_text {
+  .media-text {
     padding: 32px 8px 32px 8px;
   }
 
-  .media_text h1 {
+  .media-text h1 {
     text-align: center;
   }
 
-/* media_text END */
+/* media-text END */
 
-/* the_news START */
-
-  .the_news {
-    padding: 32px 0px;
-  }
+/* the-news START */
 
   .heading {
     padding: 0px 8px;
   }
 
   @media only screen and (max-width: 850px) {
-    .the_news {
+    #the-news {
       text-align: center;
     }
   }
 
-/* the_news END */
-
-/* news_banner START */
-
-.news_banner {
-  height: 275px;
-  width: 100%;
-  background-image: url("../../resources/images/kirstenbosch_botanical_gardens.jpg");
-  background-size: cover;
-  background-position: left;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-@media only screen and (max-width: 1000px) {
-  .news_banner {
-    height: 250px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .news_banner {
-    height: 225px;
-  }
-}
-
-/* news_banner END */
+/* the-news END */
 
 /* newsstand START */
 
@@ -706,6 +733,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 200px;
   }
 
   .about-1-social-media span, .about-2-social-media span, .about-3-social-media span, .about-4-social-media span {
@@ -720,7 +748,7 @@
     background-image: url("../../resources/images/profile_pic.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
   }
 
   @media only screen and (max-width: 950px) {
@@ -784,36 +812,10 @@
 
 /* about-us END */
 
-/* about-us-banner START */
-
-.about-us-banner {
-  height: 275px;
-  width: 100%;
-  background-image: url("../../resources/images/addo_elephant_national_park.jpg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-@media only screen and (max-width: 1000px) {
-  .about-us-banner {
-    height: 250px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .about-us-banner {
-    height: 225px;
-  }
-}
-
-/* about-us-banner END */
-
 /* about-us-desktop START */
 
   .about-us-desktop {
-    padding: 8px 0px;
+    padding: 16px 0px;
     display: flex;
     flex-direction: column;
     min-width: 90%;
@@ -823,7 +825,7 @@
 
 /* about-us-desktop END */
 
-/* full_team START */
+/* full-team START */
 
   .full-team {
     width: 100%;
@@ -848,7 +850,7 @@
     color: rgb(255, 255, 255);
   }
 
-/* full_team END */
+/* full-team END */
 
 /* fa-envelope START */
 
@@ -887,63 +889,37 @@
 
 /* about-us-title END */
 
-/* our_impact START */
+/* our-impact START */
 
-  #our_impact {
+  #our-impact {
     padding: 0px;
   }
 
-/* our_impact END */
+/* our-impact END */
 
-/* our_impact_banner START */
+/* our-impact-text START */
 
-  .our_impact_banner {
-    height: 275px;
-    width: 100%;
-    background-image: url("../../resources/images/zambezi_river.jpg");
-    background-size: cover;
-    background-position: bottom;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-  }
-
-  @media only screen and (max-width: 1000px) {
-    .our_impact_banner {
-      height: 250px;
-    }
-  }
-
-  @media only screen and (max-width: 900px) {
-    .our_impact_banner {
-      height: 225px;
-    }
-  }
-
-/* our_impact_banner END */
-
-/* our_impact_text START */
-
-  .our_impact_text {
+  .our-impact-text {
     padding: 32px 8px 32px 8px;
   }
 
-  .our_impact_text h1 {
+  .our-impact-text h1 {
     text-align: center;
   }
 
-/* our_impact_text END */
+/* our-impact-text END */
 
-/* sadc_text START */
+/* sadc-text START */
 
-  .sadc_text {
+  .sadc-text {
     padding: 0px 8px 16px 8px;
   }
 
-  .sadc_text h2 {
+  .sadc-text h2 {
     text-align: center;
   }
 
-/* sadc_text END */
+/* sadc-text END */
 
 /* sdg START */
 
@@ -955,21 +931,21 @@
 
 /* sdg END */
 
-/* sdg_text START */
+/* sdg-text START */
 
-  .sdg_text {
+  .sdg-text {
     width: 100%;
   }
 
-  .sdg_text h2 {
+  .sdg-text h2 {
     text-align: center;
   }
 
-/* sdg_text END */
+/* sdg-text END */
 
-/* sdg_icons_container START */
+/* sdg-icons-container START */
 
-  .sdg_icons_container {
+  .sdg-icons-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -977,12 +953,12 @@
     padding: 5px;
   }
 
-  .sdg_icons_container img {
+  .sdg-icons-container img {
     width: 100%;
     padding: 0;
   }
 
-  .row_1, .row_2, .row_3, .row_4 {
+  .row-1, .row-2, .row-3, .row-4 {
     display: flex;
     padding: 2px;
     flex-direction: row;
@@ -990,46 +966,46 @@
     width: 100%;
   }
 
-  .row_container_1, .row_container_2 {
+  .row-container-1, .row-container-2 {
     width: 100%;
     display: flex;
     flex-direction: row;
   }
 
   @media only screen and (max-width: 850px) {
-    .row_container_1, .row_container_2 {
+    .row-container-1, .row-container-2 {
       flex-wrap: wrap;
     }
   }
 
-  .sdg_icon_container_1, .sdg_icon_container_2, .sdg_icon_container_3, .sdg_icon_container_4, .sdg_icon_container_5, .sdg_icon_container_6, .sdg_icon_container_7, .sdg_icon_container_8, .sdg_icon_container_9, .sdg_icon_container_11, .sdg_icon_container_12, .sdg_icon_container_13 {
+  .sdg-icon-container-1, .sdg-icon-container-2, .sdg-icon-container-3, .sdg-icon-container-4, .sdg-icon-container-5, .sdg-icon-container-6, .sdg-icon-container-7, .sdg-icon-container-8, .sdg-icon-container-9, .sdg-icon-container-11, .sdg-icon-container-12, .sdg-icon-container-13 {
     width: 33%;
     display: block;
     justify-content: space-between;
   }
 
   @media only screen and (max-width: 850px) {
-    .sdg_icon_container_1, .sdg_icon_container_2, .sdg_icon_container_3, .sdg_icon_container_4, .sdg_icon_container_5, .sdg_icon_container_6, .sdg_icon_container_7, .sdg_icon_container_8, .sdg_icon_container_9, .sdg_icon_container_11, .sdg_icon_container_12, .sdg_icon_container_13 {
+    .sdg-icon-container-1, .sdg-icon-container-2, .sdg-icon-container-3, .sdg-icon-container-4, .sdg-icon-container-5, .sdg-icon-container-6, .sdg-icon-container-7, .sdg-icon-container-8, .sdg-icon-container-9, .sdg-icon-container-11, .sdg-icon-container-12, .sdg-icon-container-13 {
       width: 33%;
       display: block;
       justify-content: space-between;
     }
   }
 
-  .sdg_icon_container_5, .sdg_icon_container_8 {
+  .sdg-icon-container-5, .sdg-icon-container-8 {
     background-size: cover;
     background-position: center;
   }
 
-  .sdg_icon_container_5 {
+  .sdg-icon-container-5 {
     background-image: url("../../resources/images/sdg_5.png");
   }
 
-  .sdg_icon_container_8 {
+  .sdg-icon-container-8 {
     background-image: url("../../resources/images/sdg_8.png");
   }
 
-  .description_5, .description_8 {
+  .description-5, .description-8 {
     width: 100%;
     height: 100%;
     visibility: hidden;
@@ -1037,51 +1013,57 @@
     padding: 6px;
   }
 
-  .description_5 {
+  .description-5 {
     background-color: rgb(247, 7, 39);
   }
 
-  .description_8 {
+  .description-8 {
     background-color: rgb(130, 36, 48);
   }
 
-  .description_5 span, .description_8 span {
+  .description-5 span, .description-8 span {
     color: rgb(255, 255, 255);
     font-size: 14px;
   }
 
   @media only screen and (max-width: 980px) {
-    .description_5 span, .description_8 span {
+    .description-5 span, .description-8 span {
       color: rgb(255, 255, 255);
       font-size: 0.70rem;
     }
   }
 
-  .sdg_icon_container_5:hover > .description_5, .sdg_icon_container_8:hover > .description_8 {
+  @media only screen and (max-width: 575px) {
+    .description-5 span, .description-8 span {
+      font-size: 0.65rem;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    .description-5 span, .description-8 span {
+      font-size: 0.60rem;
+    }
+  }
+
+  .sdg-icon-container-5:hover > .description-5, .sdg-icon-container-8:hover > .description-8 {
     visibility: visible;
   }
 
-  .sdg_icon_container_5:hover, .sdg_icon_container_8:hover {
+  .sdg-icon-container-5:hover, .sdg-icon-container-8:hover {
     background-image: none;
   }
 
-  #sdg_1, #sdg_2, #sdg_3, #sdg_4, #sdg_6, #sdg_7, #sdg_9, #sdg_11, #sdg_12, #sdg_13 {
+  #sdg-1, #sdg-2, #sdg-3, #sdg-4, #sdg-6, #sdg-7, #sdg-9, #sdg-11, #sdg-12, #sdg-13 {
     opacity: 0.15;
     z-index: 2;
   }
 
-  #sdg_5, #sdg_8 {
+  #sdg-5, #sdg-8 {
     opacity: 1;
     z-index: 2;
   }
 
-  @media only screen and (max-width: 850px) {
-    .description_5 span, .description_8 span {
-      font-size: 18px;
-    }
-  }
-
-/* sdg_icons_container END */
+/* sdg-icons-container END */
 
 /* footer START */
 
@@ -1182,3 +1164,30 @@
   }
 
 /* address END */
+
+/* animations START */
+
+  .about-the-comp-text, .our-impact-text, .media-text, .news-text, .about-us-desktop, .partners-text, .portfolio-text, .sdg, .the-sadc {
+  display: none;
+}
+
+  .site-container:hover section {
+    -webkit-filter: blur(2.5px);
+    -moz-filter: blur(2.5px);
+    -o-filter: blur (2.5px);
+    -ms-filter: blur(2.5px);
+    filter: blur(2.5px);
+  }
+
+  .site-container:hover section:hover {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur (0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+  }
+
+  section {
+    position: relative;
+  }
+/* animations END */
