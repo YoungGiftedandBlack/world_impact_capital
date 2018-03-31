@@ -6,6 +6,11 @@ Could a scroll event change the section from one section to another? */
 
 /* button to show/hide the navigation. The animation has the banners slide to the away to the left and starting with about_the_comp downwards */
 
+$(document).ready(function(){
+  $(".title-1").click(function(){
+    $(this).toggleClass("alternate normal");
+  });
+});
 
 $(document).ready(function(){
     $("#about-the-comp .banner").click(function(){
