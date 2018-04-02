@@ -135,11 +135,17 @@
   }
 
   .wic-logo span {
-    font-size: 30px;
+    font-size: 26px;
     color: #4a4a4a;
     font-family: "Playfair Display";
     padding-left: 5px;
     font-weight: bold;
+  }
+
+  @media only screen and (max-width: 900px) {
+    .wic-logo span {
+      font-size: 20px;
+    }
   }
 
   @media only screen and (max-width: 850px) {
@@ -181,7 +187,7 @@
   .nav-items {
     margin: 0;
     padding: 0;
-    width: 60%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -233,7 +239,7 @@
 
   @media only screen and (max-width: 1050px) {
     .desktop a {
-      font-size: 14px;
+      font-size: 12px;
     }
 
     .desktop li {
@@ -242,10 +248,6 @@
   }
 
   @media only screen and (max-width: 950px) {
-    .desktop a {
-      font-size: 12px;
-    }
-
     .desktop li {
       padding: 1.25px 2.5px;
     }
@@ -299,13 +301,12 @@
     justify-content: center;
     width: 100%;
     background-size: cover;
-    background-position: top top;
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
 
   .normal-banner {
-    height: 150px;
+    height: 100px;
     -webkit-transition:1.2s;
     -moz-transition:1.2s;
     -ms-transition:1.2s;
@@ -314,7 +315,7 @@
   }
 
   .extended-banner {
-    height: 300px;
+    height: 200px;
     -webkit-transition:1.2s;
     -moz-transition:1.2s;
     -ms-transition:1.2s;
@@ -324,11 +325,12 @@
 
 #about-the-comp .banner {
   background-image: url("../../resources/images/kilimanjaro.jpg");
+  background-position: 10% -20%;
 }
 
 #our-impact .banner {
   background-image: url("../../resources/images/zambezi_river.jpg");
-  background-position: bottom;
+  background-position: 50% 110%;
 }
 
 #media .banner {
@@ -342,10 +344,12 @@
 
 #about-us .banner {
   background-image: url("../../resources/images/addo_elephant_national_park.jpg");
+  background-position: 50% 100%;
 }
 
 #partners-and-affiliates .banner {
   background-image: url("../../resources/images/pride-east-african-safari.jpg");
+  background-position: 50% 20%;
 }
 
 .pride {
@@ -357,7 +361,8 @@
 }
 
 #our-portfolio .banner {
-  background-image: url("../../resources/images/cape-town-beach-llandudno.jpg");
+  background-image: url("../../resources/images/lions-head.jpg");
+  background-position: 50% 100%;
 }
 
 #our-portfolio .line {
@@ -367,21 +372,21 @@
 
   @media only screen and (max-width: 1000px) {
     .normal-banner {
-      height: 100px;
+      height: 700px;
     }
 
     .extended-banner {
-      height: 200px;
+      height: 150px;
     }
   }
 
   @media only screen and (max-width: 900px) {
     .normal-banner {
-      height: 75px;
+      height: 50px;
     }
 
     .extended-banner {
-      height: 150px;
+      height: 100px;
     }
   }
 
@@ -840,6 +845,15 @@
     opacity: 0.5;
   }
 
+  .profiles {
+    padding: 8px 8px;
+    width: 100%;
+  }
+
+ .profile-1, .profile-2, .profile-3, .profile-4 {
+    display: none;
+  }
+
   #about-us i {
     margin: 8px;
   }
@@ -1242,7 +1256,7 @@
 
 /* animations START */
 
-  .about-the-comp-text, .our-impact-text, .media-text, .news-text, .about-us-text, .partners-text, .portfolio-text, .sdg, .the-sadc {
+  .media-text, .news-text, .about-us-text, .partners-text, .portfolio-text {
   display: none;
 }
 
@@ -1252,7 +1266,7 @@
     -o-filter: blur (5px);
     -ms-filter: blur(5px);
     filter: blur(5px);
-    transition-duration: 5s;
+    transition-duration: 8s;
   }
 
   .site-container:hover section:hover {
@@ -1272,7 +1286,7 @@
     text-decoration: none;
   }
 
-  #about-the-comp-anchor, #our-impact-anchor, #media-anchor, #about-us-anchor, #partners-and-affiliates-anchor, #our-portfolio-anchor {
+  #about-the-comp-anchor, #our-impact-anchor, #media-anchor, #the-news-anchor, #about-us-anchor, #partners-and-affiliates-anchor, #our-portfolio-anchor {
     display: block;
     position: relative;
     top: -65px;
