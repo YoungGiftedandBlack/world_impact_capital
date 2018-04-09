@@ -56,11 +56,14 @@
     margin: 0;
     padding: 0;
     background-color: rgb(255, 249, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   body span {
     font-family: serif;
-    color: rgb(77, 92, 89);
+    color: rgb(155, 155, 155);
     font-size: 18px;
   }
 
@@ -91,11 +94,18 @@
 
 /* body END */
 
+/* section START */
+
+  section {
+    width: 100%;
+  }
+
+/* section END */
+
 /* header START */
 
   header {
     width: 100%;
-    height: 65px;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -110,6 +120,25 @@
   header h1 {
     font-size: 14px;
     font-family: sans-serif;
+    margin: 0px;
+  }
+
+  .header-all-grown {
+    height: 65px;
+    -webkit-transition:1.2s;
+    -moz-transition:1.2s;
+    -ms-transition:1.2s;
+    -o-transition:1.2s;
+    transition:1.2s;
+  }
+
+  .header-normal-height {
+    height: 35px;
+    -webkit-transition:1.2s;
+    -moz-transition:1.2s;
+    -ms-transition:1.2s;
+    -o-transition:1.2s;
+    transition:1.2s;
   }
 
 /* header END */
@@ -119,8 +148,6 @@
   .site-container {
     display: flex;
     flex-direction: column;
-    position: relative;
-    top: 65px;
   }
 
 /* site-container END */
@@ -131,7 +158,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 50%;
   }
 
   .wic-logo span {
@@ -148,7 +174,7 @@
     }
   }
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 910px) {
     .wic-logo {
       display: none;
     }
@@ -159,7 +185,7 @@
 /* logo START */
 
   .logo {
-    height: 50px;
+    height: 100%;
     width: 50px;
   }
 
@@ -187,13 +213,13 @@
   .nav-items {
     margin: 0;
     padding: 0;
-    width: 80%;
+    min-width: 60%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 910px) {
     .nav-items {
       width: 100%;
     }
@@ -209,7 +235,7 @@
   }
 
   .desktop a {
-    color: #4a4a4a;
+    color: rgb(155, 155, 155);
     text-decoration: none;
   }
 
@@ -253,7 +279,7 @@
     }
   }
 
-  @media only screen and (max-width: 850px) {
+  @media only screen and (max-width: 910px) {
     .desktop {
       display: none;
     }
@@ -277,7 +303,7 @@
     font-weight: 900;
   }
 
-  @media only screen and (min-width: 850px) {
+  @media only screen and (min-width: 910px) {
     .mobile {
       display: none;
     }
@@ -306,7 +332,7 @@
   }
 
   .normal-banner {
-    height: 100px;
+    height: 75px;
     -webkit-transition:1.2s;
     -moz-transition:1.2s;
     -ms-transition:1.2s;
@@ -315,7 +341,7 @@
   }
 
   .extended-banner {
-    height: 200px;
+    height: 150px;
     -webkit-transition:1.2s;
     -moz-transition:1.2s;
     -ms-transition:1.2s;
@@ -325,12 +351,14 @@
 
 #about-the-comp .banner {
   background-image: url("../../resources/images/kilimanjaro.jpg");
-  background-position: 10% -20%;
+  background-position: 10% 20%;
+  height: 150px;
 }
 
 #our-impact .banner {
   background-image: url("../../resources/images/zambezi_river.jpg");
   background-position: 50% 110%;
+  height: 150px;
 }
 
 #media .banner {
@@ -349,7 +377,7 @@
 
 #partners-and-affiliates .banner {
   background-image: url("../../resources/images/pride-east-african-safari.jpg");
-  background-position: 50% -10%;
+  background-position: 50% -30%;
 }
 
 .pride {
@@ -365,6 +393,11 @@
   background-position: 50% 100%;
 }
 
+#disclaimer .banner {
+  background-image: url("../../resources/images/quirimbas-archipelago-tortoise.jpg");
+  background-position: 50% -10%;
+}
+
 #our-portfolio .line {
   display: flex;
   flex-direction: row;
@@ -372,11 +405,11 @@
 
   @media only screen and (max-width: 1000px) {
     .normal-banner {
-      height: 700px;
+      height: 67px;
     }
 
     .extended-banner {
-      height: 150px;
+      height: 125px;
     }
   }
 
@@ -405,6 +438,10 @@
     margin: 0px;
     text-align: center;
     font-weight: 700;
+  }
+
+  #about-the-comp .title-1 h1, #our-impact .title-1 h1 {
+    font-family: "expletus sans"
   }
 
   .normal {
@@ -786,6 +823,7 @@
 
   #about-us h3 {
     text-align: center;
+    font-size: 1.5em;
   }
 
   .about-1-banner, .about-2-banner, .about-3-banner, .about-4-banner {
@@ -1112,7 +1150,19 @@
 
   .description-5 span, .description-8 span {
     color: rgb(255, 255, 255);
-    font-size: 14px;
+    font-size: 32px;
+  }
+
+  @media only screen and (max-width: 1500px) {
+    .description-5 span, .description-8 span {
+      font-size: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    .description-5 span, .description-8 span {
+      font-size: 14px;
+    }
   }
 
   @media only screen and (max-width: 980px) {
@@ -1164,7 +1214,8 @@
    justify-content: space-between;
    align-items: center;
    position: relative;
-   top: 100px;
+   bottom: 0px;
+   width: 100%;
  }
 
  @media only screen and (max-width: 850px) {
@@ -1216,6 +1267,7 @@
     flex-direction: row;
     min-width: 50%;
     align-items: center;
+    height: 100%;
   }
 
   .footer-logo span {
@@ -1236,12 +1288,14 @@
 /* address START */
 
   .address {
-    width: 10%;
+    width: 15%;
   }
 
   .address span {
-    border-left: 6px;
+    border: 0px 6px;
+    padding: 0px;
     color: #4a4a4a;
+    font-size: 16px;
   }
 
   .address a {
@@ -1252,11 +1306,20 @@
     color: rgb(30, 0, 181);
   }
 
+  @media only screen and (max-width: 1050px) {
+    .address {
+      width: 12.5%;
+    }
+    .address span {
+      font-size: 12px;
+    }
+  }
+
 /* address END */
 
 /* animations START */
 
-  .media-text, .news-text, .about-us-text, .partners-text, .portfolio-text {
+  .media-text, .news-text, .about-us-text, .partners-text, .portfolio-text, .disclaimer-text {
   display: none;
 }
 
@@ -1282,15 +1345,22 @@
     color: black;
   }
 
-  #about-the-comp a, #our-impact a, #media a, #the-news a, #about-us a, #partners-and-affiliates a, #our-portfolio a {
+  #about-the-comp a, #our-impact a, #media a, #the-news a, #about-us a, #partners-and-affiliates a, #our-portfolio a, #disclaimer a {
     text-decoration: none;
   }
 
-  #about-the-comp-anchor, #our-impact-anchor, #media-anchor, #the-news-anchor, #about-us-anchor, #partners-and-affiliates-anchor, #our-portfolio-anchor {
+  #about-the-comp-anchor, #our-impact-anchor, #media-anchor, #the-news-anchor, #about-us-anchor, #partners-and-affiliates-anchor, #our-portfolio-anchor, #disclaimer-anchor {
     display: block;
     position: relative;
-    top: -65px;
     visibility: hidden;
   }
+
+.raised-anchor {
+  top: -35px;
+}
+
+.dropped-anchor {
+  top: -65px;
+}
 
 /* animations END */

@@ -13,10 +13,19 @@ Could maybe remove the bios and have a layout similar to Capria VC?
 The site looks absolutely gorgeous if you hide the bodies of text and have the nav bar be the banners!!
 Could I include blur effects on the nav-bar?
 Add more dynamism to the header menu options, with transitions?
-Could include the slide transitions from hellomonday.com?
+You could have transitions similar to :<https://www.awwwards.com/inspiration/5a256d7ee1382366b93c6aab> or maybe have like a checkerboard cutout of
+each page...and have it pop in diagonally from top left to bottom right with slight delays so it looks like its fading in? It would be best to use
+the PNG format to create the transparency among the elements.
+Check out designdrizzle.com for amazing CSS transitions
+The news and event content should contain blog posts with regards to what we learnt at conference events or during events such as the WEOF Africa
+tour (01/04/18 - 18/04/18)
 Would be nice if there was a bounce animation on the fa-envelope icon and a grow animation on the LinkedIn icon
 Could use a jquery to toggle the bios? So that when you click on view profile, it shows the person's info. Probably best if the info has width = 100% so
 that it takes up as little vertical space as possible.
+Also set the mugshot highlighted by maybe a background-color change for both the picture and bio!!
+set that when a section is open the header gets smaller...
+anchor height needs an if statement depending on the size of the header
+Events should have an eternally scrolling slideshow of events
 Comments ends here -->
 <!-- head starts here -->
   <head>
@@ -34,7 +43,7 @@ Comments ends here -->
   <body>
 
     <!-- header starts here -->
-    <header>
+    <header class="header-normal-height">
       <div class="header-container">
         <div class="wic-logo">
           <div class="logo">
@@ -52,6 +61,7 @@ Comments ends here -->
               <li><h1><a href="#about-us-anchor">About Us</a></h1></li>
               <li><h1><a href="#partners-and-affiliates-anchor">Our Partners</a></h1></li>
               <li><h1><a href="#our-portfolio-anchor">Portfolio</a></h1></li>
+              <li><h1><a href="#disclaimer-anchor">Disclaimer</a></h1></li>
             </ul>
           </nav>
           <nav class="mobile">
@@ -67,8 +77,8 @@ Comments ends here -->
       <section>
         <!-- about-the-comp starts here -->
         <div id="about-the-comp">
-          <a id="about-the-comp-anchor"></a>
-          <div class="banner normal extended-banner">
+          <a id="about-the-comp-anchor" class="raised-anchor"></a>
+          <div class="banner">
             <div class="title-1">
               <h1 style="padding-right: 8px; margin-top: -32px;">About</h1><h1 style="color: rgb(0, 0, 0); margin-bottom: -32px;">World Impact Capital</h1>
             </div>
@@ -86,9 +96,9 @@ Comments ends here -->
       <section>
         <!-- our-impact starts here -->
         <div id="our-impact">
-          <a id="our-impact-anchor"></a>
+          <a id="our-impact-anchor" class="raised-anchor"></a>
           <!-- our-impact-banner starts here -->
-          <div class="banner normal extended-banner">
+          <div class="banner">
             <div class="title-1">
               <h1>Our Impact</h1>
             </div>
@@ -97,7 +107,7 @@ Comments ends here -->
             <span></span>
             <div class="sdg">
               <div class="sdg-text">
-                <h2>Sustainable Developemnt Goals</h2>
+                <h2>Sustainable Development Goals</h2>
                 <span></span>
               </div>
               <div class="sdg-icons-container">
@@ -176,7 +186,7 @@ Comments ends here -->
       <section>
         <!-- media starts here -->
         <div id="media">
-          <a id="media-anchor"></a>
+          <a id="media-anchor" class="raised-anchor"></a>
           <a href="#media-anchor">
             <div class="banner normal normal-banner">
               <div class="title-1">
@@ -194,7 +204,7 @@ Comments ends here -->
       <section>
         <!-- the-news starts here -->
         <div id="the-news">
-          <a id="the-news-anchor"></a>
+          <a id="the-news-anchor" class="raised-anchor"></a>
           <a href="#the-news-anchor">
             <div class="banner normal normal-banner">
               <div class="title-1">
@@ -282,7 +292,7 @@ Comments ends here -->
       <section>
         <!-- about-us starts here -->
         <div id="about-us">
-          <a id="about-us-anchor"></a>
+          <a id="about-us-anchor" class="raised-anchor"></a>
           <a href="#about-us-anchor">
             <div class="banner normal normal-banner">
               <div class="title-1">
@@ -421,7 +431,7 @@ Comments ends here -->
       <section>
         <!-- partners and affiliates starts here -->
         <div id="partners-and-affiliates">
-          <a id="partners-and-affiliates-anchor"></a>
+          <a id="partners-and-affiliates-anchor" class="raised-anchor"></a>
           <a href="#partners-and-affiliates-anchor">
             <div class="banner normal normal-banner">
               <div class="title-1 partners">
@@ -445,7 +455,7 @@ Comments ends here -->
       <section>
         <!-- our portfolio starts here -->
         <div id="our-portfolio">
-          <a id="our-portfolio-anchor"></a>
+          <a id="our-portfolio-anchor" class="raised-anchor"></a>
           <a href="#our-portfolio-anchor">
             <div class="banner normal normal-banner">
               <div class="title-1">
@@ -463,6 +473,49 @@ Comments ends here -->
         <!-- our portfolio ends here -->
 
       </section>
+      <section>
+        <div id="disclaimer">
+          <a id="disclaimer-anchor" class="raised-anchor"></a>
+          <a href="#disclaimer-anchor">
+            <div class="banner normal normal-banner">
+              <div class="title-1">
+                <h1>Disclaimer</h1>
+
+              </div>
+              <!-- Use the banner from Yuto Takahashi's website on Awwwwwards to design the banner -->
+            </div>
+          </a>
+          <div class="disclaimer-text">
+            <span>This document (the “Document”) has been prepared by World Impact Capital Ltd. (“WIC”).  This Document is for informational purposes only and is intended to be a preliminary overview of SADC Women’s Economic Opportunity Fund (the "Fund"). It is provided solely for the consideration of prospective investors who have the knowledge and experience in financial and business matters and the capability to conduct their own due diligence investigation and evaluation.  This Document is not an offer to buy or sell or a solicitation of an offer to buy or sell any interest in the Fund or any other security or instrument or to participate in any trading strategy.  This Document is the lawful property of WIC and is confidential and should not, unless otherwise agreed in advance in writing by WIC, be copied, distributed, published or reproduced (in whole or in part) or disclosed by any recipient to any other person.
+
+This Document is preliminary in nature and based solely on information available as of the date hereof.  Neither WIC nor the proposed Fund, nor any of their respective members, directors, officers, employees, agents or advisers or any other person makes any representation, warranty or undertaking express or implied, as to the accuracy of completeness of the contents of this Document. In particular, but without prejudice to the generality of the foregoing, no representation or warranty is given as to the achievement or reasonableness of, and no reliance should be placed on, any assumptions, targets, forecasts, projections, estimates, indications or prospects with regard to the anticipated future structure, terms or performance of the Fund. No responsibility or liability is accepted by any such person for the occurring or completeness of the contents of the document or for any errors, misstatements or omissions herein. The exclusions set out in this Important Notice do not extend to an exclusion of liability for, or remedy in respect of, fraud or fraudulent misrepresentation.
+
+This Document is designed solely to assist exploratory discussions about the Fund with a limited number of potential investors. Investors should not purchase or subscribe for any transferable securities referred to in this Document (the “Securities”) except on the basis of information in the final form documentation (the “Offering Documents") published by the Fund in connection with the offering of interests in the Fund. The Offering Documents will contains material information not contained herein to which prospective investors will be referred and must have regard. Moreover, the specific terms applicable to interests in the Fund described generally herein, and offered pursuant to the Offering Documents, will be governed by the terms of the constituent documents of the Fund (the "Fund Documents"). Any decision to invest in the Fund should be made solely in reliance upon the Offering Documents and the Fund Documents.
+
+The information contained in this Document is preliminary in nature and does not purport to be complete.  It is subject (in whole or in part) to updating, completion, revision, amendment and verification, potentially to a material extent. All statements of opinion contained in this Document, all views expressed and all projections, forecasts or statements relating to expectations regarding future events, or the possible future performance of the Fund, represent WIC’s own assessment, based on information available to it as at the date hereof.  Actual results could differ materially from such opinions, views, projections, forecasts and statements set-forth herein. The historical performance of previous investments as reported herein should not be relied upon as an indication of likely performance, or indeed of the types of investments which may be available to the Fund. Past performance is no guarantee of future performance.
+
+The Fund will be newly formed and will have no significant investment or trading history. Potential investors should be aware that any investment in the Fund will be speculative, involve a high degree of risk, and could result in the loss of all or substantially all of their investment. Results can be positively or negatively affected by market conditions beyond the control of the Fund or any other person. Any returns set out in this document are targets only. There is no guarantee that any returns set out in this document can be achieved or can be continued if achieved, nor that the Fund will make any distributions whatsoever. There may be other additional risks, uncertainties and factors that could cause the returns generated by the Fund to be materially lower than any returns set out in this document.
+
+Any forward-looking statements set out herein speak only as at the date of this Document.  WIC (and the Fund, when formed) expressly disclaim any obligation or undertaking to update or revise any forward-looking statements contained herein to reflect actual results or any change in the assumptions, conditions or circumstances on which any such statements are based unless required to do so by applicable (and non-derogable) laws, regulations or rules of binding effect.  Prospective investors must consult their own financial, legal and tax advisors before investing in the Fund.
+
+The distribution of this Document is restricted in certain jurisdictions and this Document is not intended for distribution to, or use by, any person in any jurisdiction where such distribution or use would be contrary to local laws or regulations. In particular:
+
+•	In relation to each member state of the EEA (each a “Member State”) which has implemented Alternative Investment Fund Managers Directive (Directive (2011/61/EU)) (the “AIFMD”) (and for which transitional arrangements are not/ no longer available), this Document may only be distributed, and interests in the Fund will only be offered or placed in a Member State to the extent that: (1) the Fund is permitted to be marketed to professional investors in the relevant Member State in accordance with AIFMD (as implemented into the local law/regulation of the relevant Member State);
+•	                                 Page 2 of 4
+•
+•
+•	or (2) this Document may otherwise be lawfully distributed and interests in the Fund may otherwise be lawfully offered or placed in that Member State (including at the initiative of the investor). In relation to each Member State of the EEA which, at the date of this Document, has not implemented AIFMD, this Document may only be distributed and interests in the Fund may only be offered or placed to the extent that this Document may be lawfully distributed and the interests in the Fund may lawfully be offered or placed in that Member State (including at the initiative of the investor).
+
+•	This Document may not be made or transmitted in, into or within the United States of America (including its territories or possessions, any state of the United States of America and the District of Columbia (the “United States”). The Securities have not been and will not be registered under the U.S. Securities Act of 1933, as amended, (the “Securities Act”) or with any securities regulatory authority of any state or other jurisdiction of the United States and the Fund has not registered, and does not intend to register, as an investment company under the U.S. Investment Company Act 1940, as amended (the “Investment Company Act”). In addition, the investment adviser to the Fund has not registered and does not intend to register as an investment  adviser under the U.S. Investment Advisers Act of 1940, as amended (the “Investment Advisers Act”) Accordingly, the Securities may not be offered, sold, pledged or otherwise transferred or delivered within the United States or to, or for the account or benefit of, US persons (as defined in Regulation S under the Securities Act) except pursuant to an exemption from, or in a transaction not subject to, the registration requirements of the Securities Act and in a manner that would not require registration of the Fund under the Investment Company Act or registration of the investment adviser under the Investment Advisers Act . There will be no public offering of the Securities in the United States.
+
+No action has been taken to permit the distribution of this Document in any jurisdiction where action would be required for such purpose.  Accordingly, no person receiving a copy of this Document in any territory may treat it as constituting an invitation to him to purchase or subscribe for interests in any investment vehicle.  None of WIC, the proposed Fund, or any of their respective affiliates, nor any of their respective members, directors, officers, employees, agents, representatives or advisers or any other person accepts any liability to any person in relation to the distribution or possession of this Document in or from any jurisdiction.
+
+By accepting a copy of this Document and/or any related materials, you agree to be bound by the foregoing provisions, limitations and conditions.”
+</span>
+          </div>
+
+        </div>
+      </section>
 
     </div>
     <!-- site-container ends here -->
@@ -476,6 +529,7 @@ Comments ends here -->
         <span>© 2018. World Impact Capital Ltd. All rights reserved.</span>
       </div>
       <div class="address">
+        <span>info@worldimpactcapital.com</span>
       </div>
       <div class="footer-text">
         <a href="#"><i class="fa fa-map-marker fa-2x"></i><span>Our Location</span></a>

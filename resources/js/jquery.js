@@ -11,16 +11,11 @@
 });*/
 
 $(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-        window.location.hash = hash;
-      });
-    }
+  $("header").mouseenter(function(){
+    $(this).toggleClass("header-normal-height header-all-grown");
+  });
+  $("header").mouseleave(function(){
+    $(this).toggleClass("header-all-grown header-normal-height");
   });
 });
 
@@ -138,6 +133,9 @@ $(document).ready(function(){
     if($("#our-portfolio .banner").hasClass("extended-banner")) {
       $("#our-portfolio .banner").toggleClass("extended-banner normal-banner");
     }
+    if($("#disclaimer .banner").hasClass("extended-banner")) {
+      $("#disclaimer .banner").toggleClass("extended-banner normal-banner");
+    }
     /*if($("#about-the-comp .banner").hasClass("alternate")) {
       $("#about-the-comp .banner").toggleClass("alternate normal");
     }
@@ -156,8 +154,46 @@ $(document).ready(function(){
     if($("#our-portfolio .banner").hasClass("alternate")) {
       $("#our-portfolio .banner").toggleClass("alternate normal");
     }
+    if($("#disclaimer .banner").hasClass("alternate")) {
+      $("#disclaimer .banner").toggleClass("alternate normal");
+    }
+    if($(".profile-1").css("display") === "block") {
+      $(".profile-1").hide(500);
+    }
+    if($(".profile-2").css("display") === "block") {
+      $(".profile-2").hide(500);
+    }
+    if($(".profile-3").css("display") === "block") {
+      $(".profile-3").hide(500);
+    }
+    if($(".profile-4").css("display") === "block") {
+      $(".profile-4").hide(500);
+    }
   });
 });
+
+/*$(document).ready(function(){
+  if($("#about-us .banner").hasClass("normal-banner")) {
+    $(".profile-1").hide(500),
+    $(".profile-2").hide(500),
+    $(".profile-3").hide(500),
+    $(".profile-4").hide(500);
+  }
+});*/
+
+$(document).ready(function(){
+    $("#media .banner").click(function(){
+        $(".media-text").toggle(800),/*
+        $(".our-impact-text").hide(800),
+        $(".about-the-comp-text").hide(800),*/
+        $(".news-text").hide(800),
+        $(".about-us-text").hide(800),
+        $(".partners-text").hide(800),
+        $(".portfolio-text").hide(800),
+        $(".disclaimer-text").hide(800);
+    });
+});
+
 
 $(document).ready(function(){
   $("#the-news .banner").click(function() {
@@ -179,6 +215,9 @@ $(document).ready(function(){
     if($("#our-portfolio .banner").hasClass("extended-banner")) {
       $("#our-portfolio .banner").toggleClass("extended-banner normal-banner");
     }
+    if($("#disclaimer .banner").hasClass("extended-banner")) {
+      $("#disclaimer .banner").toggleClass("extended-banner normal-banner");
+    }
     /*if($("#about-the-comp .banner").hasClass("alternate")) {
       $("#about-the-comp .banner").toggleClass("alternate normal");
     }*/
@@ -197,8 +236,37 @@ $(document).ready(function(){
     if($("#our-portfolio .banner").hasClass("alternate")) {
       $("#our-portfolio .banner").toggleClass("alternate normal");
     }
+    if($("#disclaimer .banner").hasClass("alternate")) {
+      $("#disclaimer .banner").toggleClass("alternate normal");
+    }
+    if($(".profile-1").css("display") === "block") {
+      $(".profile-1").hide(500);
+    }
+    if($(".profile-2").css("display") === "block") {
+      $(".profile-2").hide(500);
+    }
+    if($(".profile-3").css("display") === "block") {
+      $(".profile-3").hide(500);
+    }
+    if($(".profile-4").css("display") === "block") {
+      $(".profile-4").hide(500);
+    }
   });
 });
+
+$(document).ready(function(){
+    $("#the-news .banner").click(function(){
+        $(".news-text").toggle(800),/*
+        $(".our-impact-text").hide(800),*/
+        $(".media-text").hide(800),/*
+        $(".about-the-comp-text").hide(800),*/
+        $(".about-us-text").hide(800),
+        $(".partners-text").hide(800),
+        $(".portfolio-text").hide(800),
+        $(".disclaimer-text").hide(800);
+    });
+});
+
 
 $(document).ready(function(){
   $("#about-us .banner").click(function() {
@@ -220,6 +288,9 @@ $(document).ready(function(){
     if($("#our-portfolio .banner").hasClass("extended-banner")) {
       $("#our-portfolio .banner").toggleClass("extended-banner normal-banner");
     }
+    if($("#disclaimer .banner").hasClass("extended-banner")) {
+      $("#disclaimer .banner").toggleClass("extended-banner normal-banner");
+    }
     /*if($("#about-the-comp .banner").hasClass("alternate")) {
       $("#about-the-comp .banner").toggleClass("alternate normal");
     }*/
@@ -238,7 +309,35 @@ $(document).ready(function(){
     if($("#our-portfolio .banner").hasClass("alternate")) {
       $("#our-portfolio .banner").toggleClass("alternate normal");
     }
+    if($("#disclaimer .banner").hasClass("alternate")) {
+      $("#disclaimer .banner").toggleClass("alternate normal");
+    }
+    if($(".profile-1").css("display") === "block") {
+      $(".profile-1").hide(500);
+    }
+    if($(".profile-2").css("display") === "block") {
+      $(".profile-2").hide(500);
+    }
+    if($(".profile-3").css("display") === "block") {
+      $(".profile-3").hide(500);
+    }
+    if($(".profile-4").css("display") === "block") {
+      $(".profile-4").hide(500);
+    }
   });
+});
+
+$(document).ready(function(){
+    $("#about-us .banner").click(function(){
+        $(".about-us-text").toggle(800),/*
+        $(".our-impact-text").hide(800),*/
+        $(".media-text").hide(800),
+        $(".news-text").hide(800),/*
+        $(".about-the-comp-text").hide(800),*/
+        $(".partners-text").hide(800),
+        $(".portfolio-text").hide(800),
+        $(".disclaimer-text").hide(800);
+    });
 });
 
 $(document).ready(function(){
@@ -261,6 +360,9 @@ $(document).ready(function(){
     if($("#our-portfolio .banner").hasClass("extended-banner")) {
       $("#our-portfolio .banner").toggleClass("extended-banner normal-banner");
     }
+    if($("#disclaimer .banner").hasClass("extended-banner")) {
+      $("#disclaimer .banner").toggleClass("extended-banner normal-banner");
+    }
     /*if($("#about-the-comp .banner").hasClass("alternate")) {
       $("#about-the-comp .banner").toggleClass("alternate normal");
     }*/
@@ -278,6 +380,21 @@ $(document).ready(function(){
     }*/
     if($("#our-portfolio .banner").hasClass("alternate")) {
       $("#our-portfolio .banner").toggleClass("alternate normal");
+    }
+    if($("#disclaimer .banner").hasClass("alternate")) {
+      $("#disclaimer .banner").toggleClass("alternate normal");
+    }
+    if($(".profile-1").css("display") === "block") {
+      $(".profile-1").hide(500);
+    }
+    if($(".profile-2").css("display") === "block") {
+      $(".profile-2").hide(500);
+    }
+    if($(".profile-3").css("display") === "block") {
+      $(".profile-3").hide(500);
+    }
+    if($(".profile-4").css("display") === "block") {
+      $(".profile-4").hide(500);
     }
   });
 });
@@ -299,6 +416,9 @@ $(document).ready(function(){
     if($("#partners-and-affiliates .banner").hasClass("extended-banner")) {
       $("#partners-and-affiliates .banner").toggleClass("extended-banner normal-banner");
     }
+    if($("#disclaimer .banner").hasClass("extended-banner")) {
+      $("#disclaimer .banner").toggleClass("extended-banner normal-banner");
+    }
     /*if($("#about-the-comp .banner").hasClass("extended-banner")) {
       $("#about-the-comp .banner").toggleClass("extended-banner normal-banner");
     }
@@ -317,10 +437,117 @@ $(document).ready(function(){
     if($("#partners-and-affiliates .banner").hasClass("alternate")) {
       $("#partners-and-affiliates .banner").toggleClass("alternate normal");
     }
+    if($("#disclaimer .banner").hasClass("alternate")) {
+      $("#disclaimer .banner").toggleClass("alternate normal");
+    }
     /*if($("#our-impact .banner").hasClass("alternate")) {
       $("#our-impact .banner").toggleClass("alternate normal");
     }*/
+    if($(".profile-2").css("display") === "block") {
+      $(".profile-2").hide(500);
+    }
+    if($(".profile-1, .profile-3, .profile-4").css("display") === "block") {
+      $(".profile-1, .profile-3, .profile-4").hide(500);
+    }
   });
+});
+
+$(document).ready(function(){
+    $("#our-portfolio .banner").click(function(){
+        $(".portfolio-text").toggle(800),/*
+        $(".our-impact-text").hide(800),*/
+        $(".media-text").hide(800),
+        $(".news-text").hide(800),
+        $(".about-us-text").hide(800),
+        $(".partners-text").hide(800),
+        $(".disclaimer-text").hide(800)/*
+        $(".about-the-comp-text").hide(800)*/;
+    });
+});
+
+$(document).ready(function(){
+    $("#partners-and-affiliates .banner").click(function(){
+        $(".partners-text").toggle(800),/*
+        $(".our-impact-text").hide(800),*/
+        $(".media-text").hide(800),
+        $(".news-text").hide(800),
+        $(".about-us-text").hide(800),/*
+        $(".about-the-comp-text").hide(800),*/
+        $(".portfolio-text").hide(800),
+        $(".disclaimer-text").hide(800);
+    });
+});
+
+$(document).ready(function(){
+  $("#disclaimer .banner").click(function() {
+    /*if($("#about-the-comp .banner").hasClass("extended-banner")) {
+      $("#about-the-comp .banner").toggleClass("extended-banner normal-banner");
+    }
+    if($("#our-impact .banner").hasClass("extended-banner")) {
+      $("#our-impact .banner").toggleClass("extended-banner normal-banner");
+    }*/
+    if($("#the-news .banner").hasClass("extended-banner")) {
+      $("#the-news .banner").toggleClass("extended-banner normal-banner");
+    }
+    if($("#about-us .banner").hasClass("extended-banner")) {
+      $("#about-us .banner").toggleClass("extended-banner normal-banner");
+    }
+    if($("#partners-and-affiliates .banner").hasClass("extended-banner")) {
+      $("#partners-and-affiliates .banner").toggleClass("extended-banner normal-banner");
+    }
+    if($("#our-portfolio .banner").hasClass("extended-banner")) {
+      $("#our-portfolio .banner").toggleClass("extended-banner normal-banner");
+    }
+    if($("#media .banner").hasClass("extended-banner")) {
+      $("#media .banner").toggleClass("extended-banner normal-banner");
+    }
+    /*if($("#about-the-comp .banner").hasClass("alternate")) {
+      $("#about-the-comp .banner").toggleClass("alternate normal");
+    }
+    if($("#our-impact .banner").hasClass("alternate")) {
+      $("#our-impact .banner").toggleClass("alternate normal");
+    }*/
+    if($("#the-news .banner").hasClass("alternate")) {
+      $("#the-news .banner").toggleClass("alternate normal");
+    }
+    if($("#about-us .banner").hasClass("alternate")) {
+      $("#about-us .banner").toggleClass("alternate normal");
+    }
+    if($("#partners-and-affiliates .banner").hasClass("alternate")) {
+      $("#partners-and-affiliates .banner").toggleClass("alternate normal");
+    }
+    if($("#our-portfolio .banner").hasClass("alternate")) {
+      $("#our-portfolio .banner").toggleClass("alternate normal");
+    }
+    if($("#media .banner").hasClass("alternate")) {
+      $("#media .banner").toggleClass("alternate normal");
+    }
+    if($(".profile-1").css("display") === "block") {
+      $(".profile-1").hide(500);
+    }
+    if($(".profile-2").css("display") === "block") {
+      $(".profile-2").hide(500);
+    }
+    if($(".profile-3").css("display") === "block") {
+      $(".profile-3").hide(500);
+    }
+    if($(".profile-4").css("display") === "block") {
+      $(".profile-4").hide(500);
+    }
+  });
+});
+
+$(document).ready(function(){
+    $("#disclaimer .banner").click(function(){
+        $(".disclaimer-text").toggle(800),/*
+        $(".our-impact-text").hide(800),*/
+        $(".media-text").hide(800),
+        $(".news-text").hide(800),
+        $(".about-us-text").hide(800),/*
+        $(".about-the-comp-text").hide(800),*/
+        $(".portfolio-text").hide(800),
+        $(".partners-text").hide(800);
+    });
 });
 
 /*$(document).ready(function(){
@@ -347,65 +574,7 @@ $(document).ready(function(){
     });
 });*/
 
-$(document).ready(function(){
-    $("#media .banner").click(function(){
-        $(".media-text").toggle(800),/*
-        $(".our-impact-text").hide(800),
-        $(".about-the-comp-text").hide(800),*/
-        $(".news-text").hide(800),
-        $(".about-us-text").hide(800),
-        $(".partners-text").hide(800),
-        $(".portfolio-text").hide(800);
-    });
-});
 
-$(document).ready(function(){
-    $("#the-news .banner").click(function(){
-        $(".news-text").toggle(800),/*
-        $(".our-impact-text").hide(800),*/
-        $(".media-text").hide(800),/*
-        $(".about-the-comp-text").hide(800),*/
-        $(".about-us-text").hide(800),
-        $(".partners-text").hide(800),
-        $(".portfolio-text").hide(800);
-    });
-});
-
-$(document).ready(function(){
-    $("#about-us .banner").click(function(){
-        $(".about-us-text").toggle(800),/*
-        $(".our-impact-text").hide(800),*/
-        $(".media-text").hide(800),
-        $(".news-text").hide(800),/*
-        $(".about-the-comp-text").hide(800),*/
-        $(".partners-text").hide(800),
-        $(".portfolio-text").hide(800);
-    });
-});
-
-$(document).ready(function(){
-    $("#partners-and-affiliates .banner").click(function(){
-        $(".partners-text").toggle(800),/*
-        $(".our-impact-text").hide(800),*/
-        $(".media-text").hide(800),
-        $(".news-text").hide(800),
-        $(".about-us-text").hide(800),/*
-        $(".about-the-comp-text").hide(800),*/
-        $(".portfolio-text").hide(800);
-    });
-});
-
-$(document).ready(function(){
-    $("#our-portfolio .banner").click(function(){
-        $(".portfolio-text").toggle(800),/*
-        $(".our-impact-text").hide(800),*/
-        $(".media-text").hide(800),
-        $(".news-text").hide(800),
-        $(".about-us-text").hide(800),
-        $(".partners-text").hide(800)/*
-        $(".about-the-comp-text").hide(800)*/;
-    });
-});
 
 $(document).ready(function(){
     $("#about-us .about-1-mugshot a").click(function(){
@@ -414,6 +583,93 @@ $(document).ready(function(){
         $(".profile-3").hide(500),
         $(".profile-4").hide(500);
     });
+});
+
+$(document).ready(function(){
+  $("#about-us .about-1").click(function(){
+    if ($(".about-1").css("min-width") == "25%") {
+      $(".about-1").css({"min-width":"50%", "transition-duration":"1.5s"})
+      $(".about-2, .about-3, .about-4").css({"min-width":"16.666%", "transition-duration":"1.5s"})
+      $(".about-2-mugshot, .about-3-mugshot, .about-4-mugshot").css({"height":"125px", "transition-duration":"1.5s"})
+    } else if ($(".about-1").css("min-width") == "16.666%") {
+      $(".about-1").css({"min-width":"50%", "transition-duration":"1.5s"})
+      $(".about-1-mugshot").css({"height":"200px", "transition-duration":"1.5s"})
+      $(".about-4, .about-2, .about-3").css({"min-width":"16.666%", "transition-duration":"1.5s"})
+      $(".about-2-mugshot, .about-3-mugshot, .about-4-mugshot").css({"height":"125px", "transition-duration":"1.5s"})
+    }
+    else {
+      $(".about-1").css({"min-width":"25%"}),
+      $(".about-2, .about-3, .about-4").css({"min-width":"25%", "transition-duration":"1.5s"})
+      $(".about-2-mugshot, .about-3-mugshot, .about-4-mugshot").css({"height":"200px", "transition-duration":"1.5s"})
+    }
+  });
+});
+
+$(document).ready(function(){
+  $("#disclaimer .banner, #media .banner, #the-news .banner, #about-us .banner, #partners-and-affiliates .banner, #our-portfolio .banner").click(function(){
+    $(".about-1, .about-2, .about-3, .about-4").css({"min-width":"25%"})
+    $(".about-1-mugshot, .about-2-mugshot, .about-3-mugshot, .about-4-mugshot").css({"height":"200px"})
+  });
+});
+
+$(document).ready(function(){
+  $("#about-us .about-2").click(function(){
+    if ($(".about-2").css("min-width") == "25%") {
+      $(".about-2").css({"min-width":"50%", "transition-duration":"1.5s"}),
+      $(".about-4, .about-3, .about-1").css({"min-width":"16.666%", "transition-duration":"1.5s"})
+      $(".about-1-mugshot, .about-3-mugshot, .about-4-mugshot").css({"height":"125px", "transition-duration":"1.5s"})
+    } else if ($(".about-2").css("min-width") == "16.666%") {
+      $(".about-2").css({"min-width":"50%", "transition-duration":"1.5s"})
+      $(".about-2-mugshot").css({"height":"200px", "transition-duration":"1.5s"})
+      $(".about-1, .about-4, .about-3").css({"min-width":"16.666%", "transition-duration":"1.5s"})
+      $(".about-1-mugshot, .about-3-mugshot, .about-4-mugshot").css({"height":"125px", "transition-duration":"1.5s"})
+    }
+    else {
+      $(".about-2").css({"min-width":"25%"}),
+      $(".about-4, .about-3, .about-1").css({"min-width":"25%", "transition-duration":"1.5s"})
+      $(".about-1-mugshot, .about-3-mugshot, .about-4-mugshot").css({"height":"200px", "transition-duration":"1.5s"})
+    }
+  });
+});
+
+$(document).ready(function(){
+  $("#about-us .about-3").click(function(){
+    if ($(".about-3").css("min-width") == "25%") {
+      $(".about-3").css({"min-width":"50%", "transition-duration":"1.5s"}),
+      $(".about-2, .about-4, .about-1").css({"min-width":"16.666%", "transition-duration":"1.5s"})
+      $(".about-1-mugshot, .about-2-mugshot, .about-4-mugshot").css({"height":"125px", "transition-duration":"1.5s"})
+    } else if ($(".about-3").css("min-width") == "16.666%") {
+      $(".about-3").css({"min-width":"50%", "transition-duration":"1.5s"})
+      $(".about-3-mugshot").css({"height":"200px", "transition-duration":"1.5s"})
+      $(".about-1, .about-2, .about-4").css({"min-width":"16.666%", "transition-duration":"1.5s"})
+      $(".about-1-mugshot, .about-2-mugshot, .about-4-mugshot").css({"height":"125px", "transition-duration":"1.5s"})
+    }
+    else {
+      $(".about-3").css({"min-width":"25%"}),
+      $(".about-2, .about-4, .about-1").css({"min-width":"25%", "transition-duration":"1.5s"})
+      $(".about-1-mugshot, .about-2-mugshot, .about-4-mugshot").css({"height":"200px", "transition-duration":"1.5s"})
+    }
+  });
+});
+
+$(document).ready(function(){
+  $("#about-us .about-4").click(function(){
+    if ($(".about-4").css("min-width") == "25%") {
+      $(".about-4").css({"min-width":"50%", "transition-duration":"1.5s"}),
+      $(".about-2, .about-3, .about-1").css({"min-width":"16.666%", "transition-duration":"1.5s"})
+      $(".about-1-mugshot, .about-3-mugshot, .about-2-mugshot").css({"height":"125px", "transition-duration":"1.5s"})
+    } else if ($(".about-4").css("min-width") == "16.666%") {
+      $(".about-4").css({"min-width":"50%", "transition-duration":"1.5s"})
+      $(".about-4-mugshot").css({"height":"200px", "transition-duration":"1.5s"})
+      $(".about-1, .about-2, .about-3").css({"min-width":"16.666%", "transition-duration":"1.5s"})
+      $(".about-1-mugshot, .about-3-mugshot, .about-2-mugshot").css({"height":"125px", "transition-duration":"1.5s"})
+    }
+    else {
+      $(".about-4").css({"min-width":"25%"}),
+      $(".about-2, .about-3, .about-1").css({"min-width":"25%", "transition-duration":"1.5s"})
+      $(".about-1-mugshot, .about-3-mugshot, .about-2-mugshot").css({"height":"200px", "transition-duration":"1.5s"})
+    }
+  });
 });
 
 $(document).ready(function(){
@@ -435,10 +691,26 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#about-us .about-4-mugshot a").click(function(){
-        $(".profile-4").toggle(800),
-        $(".profile-2").hide(500),
-        $(".profile-3").hide(500),
-        $(".profile-1").hide(500);
-    });
+  $("#about-us .about-4-mugshot a").click(function(){
+    $(".profile-4").toggle(800),
+    $(".profile-2").hide(500),
+    $(".profile-1").hide(500),
+    $(".profile-3").hide(500);
+  });
+});
+
+
+
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
 });
