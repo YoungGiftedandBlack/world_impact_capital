@@ -26,6 +26,7 @@ Also set the mugshot highlighted by maybe a background-color change for both the
 set that when a section is open the header gets smaller...
 anchor height needs an if statement depending on the size of the header
 Events should have an eternally scrolling slideshow of events
+Can use .not(this) selector in jquery to shorten the coding and not have duplicate code
 Comments ends here -->
 <!-- head starts here -->
   <head>
@@ -84,11 +85,26 @@ Comments ends here -->
             </div>
           </div>
           <div class="about-the-comp-text">
-            <span>World Impact Capital (WIC) was inspired by the Shona notion of a “Dura” meaning a “hut” traditionally used to store family assets such as the annual food harvest. A Dura is customarily owned by the woman of the household, who uses these assets as a security “safety net” for her family over the course of the year.
-              When launched, WIC Fund I will be an Impact Investment fund offering an exciting investment opportunity in Southern African markets for sophisticated investors wishing to participate in some of the premier frontier market growth stories of the 21st Century, earn market-rate financial returns and simultaneously create transformational social impact.
-              In addition to earning competitive returns, investments will be designed to generate employment and "decent" job creation, help raise living standards and improve financial security for local communities, just as a Dura is intended to do for local families. We believe market-rate financial returns and positive impact creation need not be mutually exclusive, but rather can be complementary and mutually reinforcing</span>
+            <div class="inspiration">
+              <div class="about-the-comp-icons">
+                <img src="./resources/images/girl.png" alt=""><img src="./resources/images/security-box.png">
+              </div>
+              <span>Inspired by the Shona notion of a "Dura" meaning a “hut traditionally used to store family assets as a safety net, customarily owned by the woman of the house”, World Impact Capital intends to similarly socio-economically empower women.</span>
+            </div>
+            <div class="WEOF">
+              <div class="about-the-comp-icons">
+                <img src="./resources/images/agreement.png"><img src="./resources/images/growth.png"><img src="./resources/images/africa.png">
+              </div>
+              <span>World Impact Capital intends to launch its first impact investment fund offering an exciting opportunity for sophisticated investors to participate in the frontier market growth being experienced across the Southern African Development Community. The Women Economic Opportunity Fund is an opportunity to take advantage of both the market-rate financial return, social impact and diversification benefits.</span>
+            </div>
+            <div class="impact-and-returns">
+              <div class="about-the-comp-icons">
+                <img src="./resources/images/award.png"><img src="./resources/images/customer.png">
+              </div>
+              <span>In conjunction with earning competitive returns, investments will be designed to generate employment, help raise living standards and improve financial security for local families and communities.</span>
             </div>
           </div>
+        </div>
           <!-- about-the-comp ends here -->
 
       </section>
@@ -314,6 +330,7 @@ Comments ends here -->
                     </div>
                     <div class="about-1-bio">
                       <h3>Nyasha Gwatidzo</h3>
+                      <h4>Limited Partner and Founder</h4>
                       <div class="">
                         <a href="#" target="_blank"><i class="fa fa-envelope fa-2x"></i></a><a href="#" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
                       </div>
@@ -331,6 +348,7 @@ Comments ends here -->
                     </div>
                     <div class="about-2-bio">
                       <h3>Matthew Powell</h3>
+                      <h4>Limited Partner and Founder</h4>
                       <div class="">
                         <a href="#" target="_blank"><i class="fa fa-envelope fa-2x"></i></a><a href="#" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
                       </div>
@@ -346,8 +364,9 @@ Comments ends here -->
                         </div>
                       </a>
                     </div>
-                    <div class="about-4-bio">
+                    <div class="about-3-bio">
                       <h3>Other</h3>
+                      <h4>No one's sure...</h4>
                       <div class="">
                         <a href="#" target="_blank"><i class="fa fa-envelope fa-2x"></i></a><a href="#" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
                       </div>
@@ -365,6 +384,7 @@ Comments ends here -->
                     </div>
                     <div class="about-4-bio">
                       <h3 style="font-family: Cinzel Decorative;">AIODA</h3>
+                      <h4>Research Analyst and Associate</h4>
                       <div class="">
                         <a href="#" target="_blank"><i class="fa fa-envelope fa-2x"></i></a><a href="#" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
                       </div>
@@ -466,7 +486,9 @@ Comments ends here -->
             </div>
           </a>
           <div class="portfolio-text">
-
+            <i class="fa fa-exclamation-triangle fa-3x"></i>
+            <h2>Under Construction</h2>
+            <span>Check back soon</span>
           </div>
 
         </div>
@@ -522,18 +544,23 @@ By accepting a copy of this Document and/or any related materials, you agree to 
 
     <!-- footer starts here -->
     <footer>
-      <div class="footer-logo">
-        <div class="logo">
-          <img src="./resources/images/wic_logo.png" alt="company logo">
+      <div class="footer-main">
+        <div class="footer-logo">
+          <div class="logo">
+            <img src="./resources/images/wic_logo.png" alt="company logo">
+          </div>
+          <span>© 2018. World Impact Capital Ltd. All rights reserved.</span>
         </div>
-        <span>© 2018. World Impact Capital Ltd. All rights reserved.</span>
+        <div class="address">
+          <span>info@worldimpactcapital.com</span>
+        </div>
+        <div class="footer-text">
+          <a href="#"><i class="fa fa-map-marker fa-2x"></i><span>Our Location</span></a>
+          <span><a href="#">Created by YG&B</a></span>
+        </div>
       </div>
-      <div class="address">
-        <span>info@worldimpactcapital.com</span>
-      </div>
-      <div class="footer-text">
-        <a href="#"><i class="fa fa-map-marker fa-2x"></i><span>Our Location</span></a>
-        <span><a href="#">Created by YG&B</a></span>
+      <div class="">
+        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
       </div>
     </footer>
       <!-- footer ends here -->
