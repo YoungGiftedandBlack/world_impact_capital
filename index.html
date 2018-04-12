@@ -1,11 +1,10 @@
 <!doctype html>
 <html>
 <!--Comments starts here
-desktop size >850px. 849px> tablet size >471px. 470px> mobile.
-Could include different fonts using Google Fonts
-Also could include transitions to the contacts section so that they grow when active???
+desktop size >850px. 849px> tablet size >471px. 470px> mobile. However numerous px classes were used to accomodate the wording in the SDG 5 & 8 graphics
 Could add a transition animation to the nav bar so that it detaches from the top when you navigate down the page. Could look slick AF. Also could add
 Font Awesome icons to the contacts section, to make it look more professional...like LinkedIn and email icons.
+Need to have the nav-bar links have full height in the bar because they are clumsy to click otherwise.
 Should use Bootstraps, include scripts at the bottom to prevent it being top-heavy and not loading quickly.
 Could make the header intially see-through and then change at 100px from the top. Maybe try setting the background of a whole section to be a picture
 and then make the title div have a transparent background so that as you scroll it moves? Also would have to set the title font color to white?
@@ -17,6 +16,7 @@ You could have transitions similar to :<https://www.awwwards.com/inspiration/5a2
 each page...and have it pop in diagonally from top left to bottom right with slight delays so it looks like its fading in? It would be best to use
 the PNG format to create the transparency among the elements.
 Check out designdrizzle.com for amazing CSS transitions
+Should use a carousel for the events?
 The news and event content should contain blog posts with regards to what we learnt at conference events or during events such as the WEOF Africa
 tour (01/04/18 - 18/04/18)
 Would be nice if there was a bounce animation on the fa-envelope icon and a grow animation on the LinkedIn icon
@@ -27,6 +27,8 @@ set that when a section is open the header gets smaller...
 anchor height needs an if statement depending on the size of the header
 Events should have an eternally scrolling slideshow of events
 Can use .not(this) selector in jquery to shorten the coding and not have duplicate code
+Can use "this" in jquery to prevent duplicate classes all being affected, shortening the jquery code required hugely
+Can use ".ajax" to make information requests to include data from other sites
 Comments ends here -->
 <!-- head starts here -->
   <head>
@@ -81,7 +83,7 @@ Comments ends here -->
           <a id="about-the-comp-anchor" class="raised-anchor"></a>
           <div class="banner">
             <div class="title-1">
-              <h1 style="padding-right: 8px; margin-top: -32px;">About</h1><h1 style="color: rgb(0, 0, 0); margin-bottom: -32px;">World Impact Capital</h1>
+              <h1 style="padding-right: 8px; margin-top: -32px; color: rgb(0, 37, 52);">About</h1><h1 style="color: rgb(0, 0, 0); margin-bottom: -32px;">World Impact Capital</h1>
             </div>
           </div>
           <div class="about-the-comp-text">
@@ -89,19 +91,19 @@ Comments ends here -->
               <div class="about-the-comp-icons">
                 <img src="./resources/images/girl.png" alt=""><img src="./resources/images/security-box.png">
               </div>
-              <span>Inspired by the Shona notion of a "Dura" meaning a “hut traditionally used to store family assets as a safety net, customarily owned by the woman of the house”, World Impact Capital intends to similarly socio-economically empower women.</span>
+              <span>Inspired by the Shona notion of a "Dura" meaning a “hut traditionally used to store family assets as a safety net, customarily owned by the woman of the house”, World Impact Capital intends to similarly <b>socio-economically empower women</b>.</span>
             </div>
             <div class="WEOF">
               <div class="about-the-comp-icons">
                 <img src="./resources/images/agreement.png"><img src="./resources/images/growth.png"><img src="./resources/images/africa.png">
               </div>
-              <span>World Impact Capital intends to launch its first impact investment fund offering an exciting opportunity for sophisticated investors to participate in the frontier market growth being experienced across the Southern African Development Community. The Women Economic Opportunity Fund is an opportunity to take advantage of both the market-rate financial return, social impact and diversification benefits.</span>
+              <span>World Impact Capital intends to launch its first impact investment fund offering an exciting opportunity for sophisticated investors to participate in the <b>frontier market growth</b> being experienced across the Southern African Development Community. <b>The Women Economic Opportunity Fund is an opportunity to take advantage of the market-rate financial returns, social impact and diversification benefits</b>.</span>
             </div>
             <div class="impact-and-returns">
               <div class="about-the-comp-icons">
                 <img src="./resources/images/award.png"><img src="./resources/images/customer.png">
               </div>
-              <span>In conjunction with earning competitive returns, investments will be designed to generate employment, help raise living standards and improve financial security for local families and communities.</span>
+              <span>In conjunction with earning competitive returns, investments will be designed to <b>generate employment</b>, help <b>raise living standards</b> and <b>improve financial security</b> for local families and communities.</span>
             </div>
           </div>
         </div>
@@ -148,13 +150,13 @@ Comments ends here -->
                       <img id="sdg-7" src="./resources/images/sdg_7.png" alt="Affordable and Clean Energy">
                       <span></span>
                     </div>
-                    <div class="sdg-icon-container-9">
-                      <img id="sdg-9" src="./resources/images/sdg_9.png" alt="Decent and Economic Growth">
-                    </div>
                     <div class="sdg-icon-container-8">
                       <div class="description-8">
                         <span>Promote sustained, inclusive and sustainable growth, full and productive and decent employment for all</span>
                       </div>
+                    </div>
+                    <div class="sdg-icon-container-the-global-goals">
+                      <img id="sdg-the-global-goals" src="./resources/images/the-global-goals.jpg" alt="The Global Goals">
                     </div>
                   </div>
                 </div>

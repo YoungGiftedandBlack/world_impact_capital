@@ -55,8 +55,8 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
-    /*background-color: rgb(255, 249, 241);*/
+    /*background-color: rgb(255, 255, 255);*/
+    background-color: rgb(255, 249, 241);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,6 +239,15 @@
   .desktop a {
     color: rgb(155, 155, 155);
     text-decoration: none;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .desktop h1 {
+    height: 100%;
+    width: auto;
   }
 
   .desktop a:hover {
@@ -390,6 +399,8 @@
   display: none;
 }
 
+/* you can actually add an animation to the our partners banner using the .html jquery function to change the wording dynamically */
+
 #our-portfolio .banner {
   background-image: url("../../resources/images/lions-head.jpg");
   background-position: 50% 100%;
@@ -507,10 +518,13 @@
     display: flex;
     flex-direction: column;
     padding: 32px 8px 32px 8px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
   }
 
   .about-the-comp-text div {
     justify-content: center;
+    width: 75%;
   }
 
   .about-the-comp-text img {
@@ -522,6 +536,13 @@
   .about-the-comp-icons {
     display: flex;
     flex-direction: row;
+    margin: 10px 0px;
+  }
+
+  .inspiration, .WEOF, .impact-and-returns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @media only screen and (max-width: 850px) {
@@ -1037,6 +1058,7 @@
 
   #our-impact {
     padding: 0px;
+    background-color: rgb(0, 37, 51);
   }
 
 /* our-impact END */
@@ -1049,6 +1071,10 @@
 
   .our-impact-text h1 {
     text-align: center;
+  }
+
+  .our-impact-text h2 {
+    color: rgb(255, 255, 255);
   }
 
 /* our-impact-text END */
@@ -1122,14 +1148,14 @@
     }
   }
 
-  .sdg-icon-container-1, .sdg-icon-container-2, .sdg-icon-container-3, .sdg-icon-container-4, .sdg-icon-container-5, .sdg-icon-container-6, .sdg-icon-container-7, .sdg-icon-container-8, .sdg-icon-container-9, .sdg-icon-container-11, .sdg-icon-container-12, .sdg-icon-container-13 {
+  .sdg-icon-container-1, .sdg-icon-container-2, .sdg-icon-container-3, .sdg-icon-container-4, .sdg-icon-container-5, .sdg-icon-container-6, .sdg-icon-container-7, .sdg-icon-container-8, .sdg-icon-container-the-global-goals, .sdg-icon-container-11, .sdg-icon-container-12, .sdg-icon-container-13 {
     width: 33%;
     display: block;
     justify-content: space-between;
   }
 
   @media only screen and (max-width: 850px) {
-    .sdg-icon-container-1, .sdg-icon-container-2, .sdg-icon-container-3, .sdg-icon-container-4, .sdg-icon-container-5, .sdg-icon-container-6, .sdg-icon-container-7, .sdg-icon-container-8, .sdg-icon-container-9, .sdg-icon-container-11, .sdg-icon-container-12, .sdg-icon-container-13 {
+    .sdg-icon-container-1, .sdg-icon-container-2, .sdg-icon-container-3, .sdg-icon-container-4, .sdg-icon-container-5, .sdg-icon-container-6, .sdg-icon-container-7, .sdg-icon-container-8, .sdg-icon-container-the-global-goals, .sdg-icon-container-11, .sdg-icon-container-12, .sdg-icon-container-13 {
       width: 33%;
       display: block;
       justify-content: space-between;
@@ -1209,12 +1235,12 @@
     background-image: none;
   }
 
-  #sdg-1, #sdg-2, #sdg-3, #sdg-4, #sdg-6, #sdg-7, #sdg-9, #sdg-11, #sdg-12, #sdg-13 {
+  #sdg-1, #sdg-2, #sdg-3, #sdg-4, #sdg-6, #sdg-7, #sdg-11, #sdg-12, #sdg-13 {
     opacity: 0.15;
     z-index: 2;
   }
 
-  #sdg-5, #sdg-8 {
+  #sdg-5, #sdg-8, #sdg-the-global-goals {
     opacity: 1;
     z-index: 2;
   }
