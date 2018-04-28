@@ -55,8 +55,7 @@
   body {
     margin: 0;
     padding: 0;
-    /*background-color: rgb(255, 255, 255);*/
-    background-color: rgb(255, 249, 241);
+    /*background-color: rgb(255, 249, 241);*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,7 +63,7 @@
 
   body span {
     font-family: serif;
-    color: rgb(155, 155, 155);
+    color: rgb(188, 188, 188);
     font-size: 18px;
   }
 
@@ -82,6 +81,10 @@
     font-size: 30px;
   }
 
+  body h3 {
+    color: rgb(190, 158, 85);
+  }
+
   @media only screen and (max-width: 850px) {
     body h2 {
       margin-top: 10px;
@@ -89,9 +92,6 @@
     }
   }
 
-  body h3 {
-    color: rgb(190, 158, 85);
-  }
 
 /* body END */
 
@@ -237,7 +237,7 @@
   }
 
   .desktop a {
-    color: rgb(155, 155, 155);
+    color: rgb(188, 188, 188);
     text-decoration: none;
     width: auto;
     height: 100%;
@@ -361,33 +361,33 @@
   }
 
 #about-the-comp .banner {
-  background-image: url("../../resources/images/kilimanjaro.jpg");
+  background-image: url("../../resources/images/banners/kilimanjaro.jpg");
   background-position: 10% 20%;
   height: 250px;
 }
 
 #our-impact .banner {
-  background-image: url("../../resources/images/zambezi_river.jpg");
+  background-image: url("../../resources/images/banners/zambezi_river.jpg");
   background-position: 50% 110%;
   height: 250px;
 }
 
 #media .banner {
-  background-image: url("../../resources/images/serengeti_national_park.jpg");
+  background-image: url("../../resources/images/banners/serengeti_national_park.jpg");
   background-position: right;
 }
 
 #the-news .banner {
-  background-image: url("../../resources/images/kirstenbosch_botanical_gardens.jpg");
+  background-image: url("../../resources/images/banners/kirstenbosch_botanical_gardens.jpg");
 }
 
 #about-us .banner {
-  background-image: url("../../resources/images/addo_elephant_national_park.jpg");
+  background-image: url("../../resources/images/banners/addo_elephant_national_park.jpg");
   background-position: 50% 100%;
 }
 
 #partners-and-affiliates .banner {
-  background-image: url("../../resources/images/pride-east-african-safari.jpg");
+  background-image: url("../../resources/images/banners/pride-east-african-safari.jpg");
   background-position: 50% -30%;
 }
 
@@ -402,12 +402,12 @@
 /* you can actually add an animation to the our partners banner using the .html jquery function to change the wording dynamically */
 
 #our-portfolio .banner {
-  background-image: url("../../resources/images/lions-head.jpg");
+  background-image: url("../../resources/images/banners/lions-head.jpg");
   background-position: 50% 100%;
 }
 
 #disclaimer .banner {
-  background-image: url("../../resources/images/quirimbas-archipelago-tortoise.jpg");
+  background-image: url("../../resources/images/banners/quirimbas-archipelago-tortoise.jpg");
   background-position: 50% -10%;
 }
 
@@ -901,7 +901,7 @@
   }
 
   .about-1-mugshot, .about-2-mugshot, .about-3-mugshot, .about-4-mugshot {
-    background-image: url("../../resources/images/profile_pic.png");
+    background-image: url("../../resources/images/profile_pics/profile_pic.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
@@ -1058,7 +1058,6 @@
 
   #our-impact {
     padding: 0px;
-    background-color: rgb(0, 37, 51);
   }
 
 /* our-impact END */
@@ -1067,6 +1066,7 @@
 
   .our-impact-text {
     padding: 32px 8px 32px 8px;
+    background-color: rgb(0, 37, 51);
   }
 
   .our-impact-text h1 {
@@ -1079,10 +1079,21 @@
 
 /* our-impact-text END */
 
+/* the-sadc START */
+
+  .the-sadc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+/* the-sadc END */
+
 /* sadc-text START */
 
   .sadc-text {
     padding: 0px 8px 16px 8px;
+    width: 75%;
   }
 
   .sadc-text h2 {
@@ -1168,11 +1179,11 @@
   }
 
   .sdg-icon-container-5 {
-    background-image: url("../../resources/images/sdg_5.png");
+    background-image: url("../../resources/images/sdg_icons/sdg_5.png");
   }
 
   .sdg-icon-container-8 {
-    background-image: url("../../resources/images/sdg_8.png");
+    background-image: url("../../resources/images/sdg_icons/sdg_8.png");
   }
 
   .description-5, .description-8 {
@@ -1246,6 +1257,34 @@
   }
 
 /* sdg-icons-container END */
+
+/* our-portfolio START */
+
+  #our-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #our-portfolio a {
+    width: 100%;
+  }
+
+  .portfolio-text {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 16px 0px;
+  }
+
+/* our-portfolio END */
+
+/* partners-and-affiliates START */
+/* partners-and-affiliates END */
+
+/* disclaimer START */
+/* disclaimer END */
 
 /* footer START */
 
