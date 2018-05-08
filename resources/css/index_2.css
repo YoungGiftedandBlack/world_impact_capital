@@ -1,18 +1,38 @@
 html {
   min-height: 100%;
-  overflow-y: hidden;
-  overflow: hidden;
-  position: relative;
 }
 
-.site-container {
-  width: 85%;
-  height: 85%;
-  margin: 6px;
+.wic-logo {
+  width: 10%;
+  height: auto;
+  margin: 2px;
+  position: absolute;
+  top: 9%;
+  left: 4.5%;
+  transform: translate(-50%, -50%);
+}
+
+.wic-logo img {
+  height: auto;
+  width: 100%;
+}
+
+.site-container, .progress-container {
+  z-index: 1;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+  width: 80%;
+  height: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.site-container .container {
+  padding: 0px;
 }
 
 .nav-desktop {
@@ -29,14 +49,14 @@ html {
 }
 
 .nav-hidden {
-  transform: translate(-245%, -50%);
-  z-index: 0;
+  transform: translate(-252%, -50%);
+  z-index: 11;
   transition-duration: 1.5s;
 }
 
 .nav-show {
-  transform: translate(-150%, -50%);
-  z-index: 99;
+  transform: translate(-165%, -50%);
+  z-index: 11;
   transition-duration: 1.5s;
 }
 
@@ -46,6 +66,9 @@ html {
 
 .nav-desktop .row .col-md-3 {
   display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  padding: 0px 0px;
 }
 
 nav {
@@ -58,6 +81,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.menu span {
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
@@ -69,7 +95,6 @@ nav ul {
   margin: 0px;
   padding-left: 0px;
 }
-
 
 .nav-desktop a {
   min-height: 100%;
@@ -88,8 +113,12 @@ nav ul {
 }
 
 .nav-arrow-container {
-  width: 95%;
-  height: 90%;
+  z-index: 10;
+  width: 90%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0px;
   position: absolute;
   top: 50%;
@@ -97,27 +126,13 @@ nav ul {
   transform: translate(-50%, -50%);
 }
 
-.nav-arrow-container .container {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.nav-arrow-container a {
+  z-index: 10;
+  cursor: pointer;
 }
 
-.nav-arrow-container .container .row {
-  min-width: 100%;
-}
-
-.arrow-div {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.nav-arrow-container a:hover {
+  color: green;
 }
 
 li {
@@ -127,6 +142,70 @@ li {
   align-items: center;
 }
 
+.home-nav {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  width: 80%;
+  height: 100%;
+  margin: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-banner {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 12.5%;
+  cursor: pointer;
+}
+
+.about-wic-banner, .our-impact-banner, .media-banner, .news-and-events-banner, .about-us-banner, .our-partners-banner, .our-portfolio-banner, .disclaimer-banner {
+  z-index: 2;
+}
+
+.about-wic-homescreen {
+  /*background-image: url("../../resources/images/banners/kilimanjaro.jpg");*/
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  height: 0%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.our-impact-homescreen {
+  /*background-image: url("../../resources/images/banners/zambezi-river.jpg");*/
+}
+
+.media-homescreen {
+  /*background-image: url("../../resources/images/banners/serengeti-national-park.jpg");*/
+}
+
+.news-and-events-homescreen {
+  /*background-image: url("../../resources/images/banners/kirstenbosch-botanical-gardens.jpg");*/
+}
+
+.about-us-homescreen {
+  /*background-image: url("../../resources/images/banners/addo-elephant-national-park.jpg");*/
+}
+
+.our-partners-homescreen {
+  /*background-image: url("../../resources/images/banners/pride-east-african-safari.jpg");*/
+}
+
+.our-portfolio-homescreen {
+  /*background-image: url("../../resources/images/banners/lions-head.jpg");*/
+}
+
+.disclaimer-homescreen {
+  /*background-image: url("../../resources/images/banners/quirimbas-archipelago-tortoise.jpg");*/
+}
 
 /* These shouldnt be on the banners, the backgrounds are covers for the sections of the site...inside the site-container */
 /*
@@ -170,84 +249,111 @@ li {
   background-position: 50% 80%;
 }*/
 
-#about-wic {
+#about-wic, #our-impact, #media, #news-and-events, #about-us, #our-partners, #our-portfolio, #disclaimer, .banner, .layer-1, .layer-2 {
   width: 100%;
   height: 100%;
-  margin: 6px;
+  margin: 0px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#our-impact {
+.outer, .middle, .inner, .outer-halfspace, .inner-halfspace {
+  z-index: 2;
   width: 100%;
-  height: 100%;
-  margin: 6px;
+  margin: 0px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#media {
-  width: 100%;
-  height: 100%;
-  margin: 6px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.outer, .middle, .inner {
+  background-image: url("../../resources/images/wic2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#news-and-events {
-  width: 100%;
-  height: 100%;
-  margin: 6px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.outer-halfspace, .inner-halfspace {
+  background-image: url("../../resources/images/banners/kilimanjaro.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#about-us {
-  width: 100%;
+.our-impact-banner {
   height: 100%;
-  margin: 6px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
-#our-partners {
-  width: 100%;
-  height: 100%;
-  margin: 6px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.our-impact-banner .layer-1, .our-impact-banner .layer-2 {
+  display: flex;
+  flex-direction: row;
 }
 
-#our-portfolio {
-  width: 100%;
-  height: 100%;
-  margin: 6px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.layer-1 {
+  z-index: 5;
 }
 
-#disclaimer {
-  width: 100%;
+.layer-2 {
+  z-index: 10;
+}
+
+/*.right {
+  z-index: 1;
+  position: relative;
   height: 100%;
+  width: 25%;
+  /*background-image: url("../../resources/images/banners/zambezi-river.jpg");*/
+  /*background-color: black;
+  background-attachment: fixed;
+}*/
+
+.left, .left-center, .right-center, .right {
+  overflow: hidden;
+  width: 25%;
+  height: 100%;
+}
+
+.our-impact-banner img {
+  height: 200%;
+  width: auto;
+}
+
+.layer-2 img {
+  height: 250%;
+  width: auto;
+}
+
+.layer-1 .left img, .layer-1 .left-center img, .layer-1 .right-center img, .layer-1 .right img {
+  margin-left: -600%;
+}
+
+.layer-2 img {
+  margin-top: -140%;
+  margin-left: -500%;
+}
+
+.our-impact-text h1, .our-impact-text span {
+  margin-left: -100%;
+}
+
+#progress-bar {
+  z-index: 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  height: 5%;
   margin: 6px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 1000%);
 }
 
 footer {
@@ -255,12 +361,4 @@ footer {
   bottom: 6px;
   max-height: 5%;
   width: 100%;
-}
-
-.about-wic {
-
-}
-
-.our-impact {
-
 }

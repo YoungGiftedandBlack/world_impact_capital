@@ -16,15 +16,61 @@ the nav-desktop transforms back */
 $(document).ready(function(){
   $(".nav-desktop .row .col-md-3, li").click(function(){
     $(".nav-desktop").toggleClass("nav-hidden nav-show");
-
+    if ($(".nav-desktop").hasClass("nav-hidden")) {
+      /* the idea here is to either blur or make the surrounding elements not the focus...could just use the same function from prev
+      website draft */
+    }
   });
 });
 
 /* The background color of the site-container changes based on the color of the background-image. For e.g. the zambezi river would have blue-green
-background */
+background, use this as the inspiration: https://www.awwwards.com/inspiration/5addc520e1382306a22d8fe5 */
+/*$(document).ready(function(){
+  $(".nav-banner-1").click(function(){
+    $(".outer").animate({height: "100%"}, 1500),
+    $(".outer-halfspace").delay(150).animate({height: "100%"}, 1500),
+    $(".middle").delay(250).animate({height: "100%"}, 1500),
+    $(".inner-halfspace").delay(300).animate({height: "100%"}, 1500),
+    $(".inner").delay(375).animate({height: "100%"}, 1500);
+    $(".our-impact-text, .media-text, .news-and-events-text, .about-us-text, .our-partners-text, .our-portfolio-text, .disclaimer-text").delay(500).animate({height: "0%"}, 1500);
+    $(".inner").animate({height: "0%"}, 1500),
+    $(".about-wic-text").delay(1500).animate({height: "100%"}, 1500),
+    $(".inner-halfspace").delay(150).animate({height: "0%"}, 1500),
+    $(".middle").delay(250).animate({height: "0%"}, 1500),
+    /*$(".outer-halfspace").delay(300).animate({height: "0%"}, 1500),
+    $(".outer").delay(350).animate({height: "0%"}, 1500);
+  });
+});*/
+
+$(document).ready(function(){
+  $(".nav-banner-1").click(function(){
+    if ($("#about-wic .text").css("height") == "100%") {
+      alert("oh damn it worked")
+    }
+  })
+})
+
+$(document).ready(function(){
+  $(".nav-banner-2").click(function(){
+    $(".layer-1 .right img").animate({marginLeft: "-350%"}, 800).delay(250).animate({marginLeft: "-600%"}, 350),
+    $(".layer-1 .right-center img").animate({marginLeft: "-250%"}, 650).delay(325).animate({marginLeft: "-600%"}, 425),
+    $(".layer-1 .left-center img").animate({marginLeft: "-150%"}, 700).delay(300).animate({marginLeft: "-600%"}, 400),
+    $(".layer-1 .left img").animate({marginLeft: "-50%"}, 660).delay(320).animate({marginLeft: "-600%"}, 420);
+    $(".about-wic-text, .media-text, .news-and-events-text, .about-us-text, .our-partners-text, .our-portfolio-text, .disclaimer-text").delay(500).animate({height: "0%"}, 1500);
+    $(".layer-2 .right img").delay(800).animate({marginLeft: "-342.5%"}, 660).delay(70).animate({marginLeft: "100%"}, 840);
+    $(".layer-2 .right-center img").delay(800).animate({marginLeft: "-242.5%"}, 700).delay(45).animate({marginLeft: "100%"}, 800),
+    $(".layer-2 .left-center img").delay(800).animate({marginLeft: "-142.5%"}, 650).delay(75).animate({marginLeft: "100%"}, 850),
+    $(".layer-2 .left img").delay(800).animate({marginLeft: "-42.5%"}, 800).animate({marginLeft: "100%"}, 700),
+    $(".our-impact-text").delay(800).animate({height: "100%"}, 1500),
+    $(".our-impact-text h1, .our-impact-text span").animate({marginLeft: "0%"}, 1650);
+  });
+});
 
 
-/* about-wic transition based on this transition example (the orange box):https://www.awwwards.com/inspiration/5ac6034be13823383f6858c0 */
+
+
+/* about-wic transition based on this transition example (the orange box):https://www.awwwards.com/inspiration/5ac6034be13823383f6858c0, delay each
+transition by ~.25secs from the start of the last */
 
 
 /* about-wic transition */

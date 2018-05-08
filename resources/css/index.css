@@ -367,22 +367,22 @@
 }
 
 #our-impact .banner {
-  background-image: url("../../resources/images/banners/zambezi_river.jpg");
+  background-image: url("../../resources/images/banners/zambezi-river.jpg");
   background-position: 50% 110%;
   height: 250px;
 }
 
 #media .banner {
-  background-image: url("../../resources/images/banners/serengeti_national_park.jpg");
+  background-image: url("../../resources/images/banners/serengeti-national-park.jpg");
   background-position: right;
 }
 
 #the-news .banner {
-  background-image: url("../../resources/images/banners/kirstenbosch_botanical_gardens.jpg");
+  background-image: url("../../resources/images/banners/kirstenbosch-botanical-gardens.jpg");
 }
 
 #about-us .banner {
-  background-image: url("../../resources/images/banners/addo_elephant_national_park.jpg");
+  background-image: url("../../resources/images/banners/addo-elephant-national-park.jpg");
   background-position: 50% 100%;
 }
 
